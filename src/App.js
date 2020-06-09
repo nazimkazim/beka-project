@@ -23,6 +23,7 @@ function App() {
         <Route exact path="/blogs/:slug" component={SingleBlog} />
         <Route exact component={Error} />
       </Switch>
+      <Footer/>
     </>
   );
 }

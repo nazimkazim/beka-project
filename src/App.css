@@ -149,11 +149,11 @@ a {
 .hero-left-desc-h1-link {
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .hero-left-desc-h1-link a {
   color: yellow;
-  text-decoration: underline;
 }
 
 .hero-left-desc-title, .hero-left-desc-desc {
@@ -177,6 +177,10 @@ a {
 
 .MuiButton-label a {
   color: #fff4e6;
+}
+
+.download-presentation-section {
+  padding: 100px;
 }
 
 

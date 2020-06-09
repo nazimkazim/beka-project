@@ -18,7 +18,7 @@ export default function ContainedButtons(props) {
   return (
     <div className={classes.root}>
       <Button variant="contained" color="primary">
-      <Link to={props.to}>{props.value}</Link>
+      {props.to && <Link to={props.to}>{props.value}</Link>}
       </Button>
     </div>
   );

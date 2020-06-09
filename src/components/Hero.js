@@ -51,12 +51,12 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
                 {data.map((item) => (
                     <div>
-                        <div className="carrousel_image" style={{backgroundImage:`url(${item.img})`,height:`700px`}}>
+                        <div className="carrousel_image" style={{backgroundImage:`url(${item.img})`,height:`${window.innerHeight}px`}}>
                             <div className="columns">
                                 <div className="column">
                                     <div className="hero-left-desc">
                                         <Fade>
-                                            <h1 className="hero-left-desc-h1-link"><Link to={item.to}>{item.link}</Link></h1>
+                                            <h1 className="hero-left-desc-h1-link">{item.to && <Link to={item.to}>{item.link}</Link>}</h1>
                                         </Fade>
                                         <Zoom left cascade>
                                             <h1 className="hero-left-desc-title">{item.title}</h1>

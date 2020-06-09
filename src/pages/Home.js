@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
+import DownloadPresentationComp from '../components/DownloadPresentationComp'
 //import Banner from "../components/Banner";
 //import { Link } from "react-router-dom";
 //import Services from "../components/Services";
@@ -7,7 +8,10 @@ import Hero from "../components/Hero";
 
 const Home = () => {
   return (
-      <Hero />
+      <>
+        <Hero />
+        <DownloadPresentationComp/>
+      </>
   );
 };
 
