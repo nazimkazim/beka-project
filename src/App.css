@@ -205,6 +205,11 @@ a {
   margin-top: 40px;
 }
 
+.about-us-section {
+  background-color: #2C2D3D;
+  padding: 100px;
+}
+
 
 
 @media screen and (max-width: 768px) {
