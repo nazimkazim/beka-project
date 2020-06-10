@@ -3,9 +3,9 @@ import ButtonCustom from './ButtonCustom'
 
 function DownloadPresentationComp() {
   return (
-    <section class="section download-presentation-section">
-    <div class="container">
-      <h2 class="subtitle has-text-centered download-presentation-section-subtitle">
+    <section className="section download-presentation-section">
+    <div className="container">
+      <h2 className="subtitle has-text-centered download-presentation-section-subtitle">
           Повышение ЭФФЕКТИВНОСТИ, БЕЗОПАСНОСТИ и УСТОЙЧИВОГО РАЗВИТИЯ операций благодаря проверенным на практике цифровым инновациям.
       </h2>
       <div className="has-text-centered">

@@ -4,7 +4,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,8 +18,8 @@ export default function InsetList(props) {
 
   return (
     <List component="nav" className={ classes.root } aria-label="contacts">
-      { props.data.map(item => (
-        <ListItem button>
+      { props.data.map((item, index) => (
+        <ListItem key={index} button>
           <ListItemIcon>
           {item.icon}
           </ListItemIcon>

@@ -188,6 +188,23 @@ a {
   color:white
 }
 
+.about-us-image {
+  max-width:600px;
+  margin:0 auto;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
 
 
 @media screen and (max-width: 768px) {

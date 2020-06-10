@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
   render() {
     const settings = {
         infinite: true,
-        autoplay: true,
+        arrows: true,
         speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -51,8 +51,8 @@ export default class SimpleSlider extends Component {
     return (
         <div className="carrousel_wrapper" >
         <Slider {...settings}>
-                {data.map((item) => (
-                    <div>
+                {data.map((item, index) => (
+                    <div key={index}>
                         <div className="carrousel_image" style={{backgroundImage:`url(${item.img})`}}>
                             <div className="columns">
                                 <div className="column hero-left-column">
