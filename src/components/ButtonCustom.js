@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from "react-router-dom";
 
 function ButtonCustom(props) {
   const ButtonCustom = styled.button`
@@ -14,6 +13,10 @@ function ButtonCustom(props) {
     cursor:pointer;
     font-size:${props => props.fontSize || '16px'};
     position:relative
+
+    @media (max-width: 414px) {
+      width:${props => props.width || '200px'};
+    }
 
     &:after {
       content: "";

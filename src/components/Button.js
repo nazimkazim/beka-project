@@ -16,9 +16,10 @@ export default function ContainedButtons(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    
+    <div className={ classes.root }>
       <Button variant="contained" color="primary">
-      {props.to && <Link to={props.to}>{props.value}</Link>}
+        <Link to={ props.to }>{ props.value }</Link>
       </Button>
     </div>
   );

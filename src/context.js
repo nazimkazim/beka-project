@@ -37,9 +37,9 @@ class FlowerProvider extends Component {
         maxPrice,
         maxSize
       });
-      console.log(flowers);
+      //console.log(flowers);
     } catch (error) {
-      console.log(error);
+      //console.log(error);
     }
   };
 

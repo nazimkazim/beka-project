@@ -32,12 +32,14 @@ export default class SimpleSlider extends Component {
         },
         {
             link:'Технологические услуги',
+            to:'sevices',
             title:'Специально для горнодобывающей промышленности',
             desc:'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы.',
             img:mining1
         },
         {
             link:'Знакомтесь с  PIN',
+            to:'pin',
             title:'IoT-устройство корпоративного майнинга',
             desc:'Смешивать и сочетать функции, включая беспроводную связь,Ethernet, HPGNSS, внутренняя ориентация и мертвый расчетна одном настраиваемом устройстве.',
             img:ai,
@@ -47,13 +49,13 @@ export default class SimpleSlider extends Component {
 
     ]
     return (
-        <div className="carrousel_wrapper" style={{height:`${window.innerHeight}px`, overflow:'hidden'}}>
+        <div className="carrousel_wrapper" >
         <Slider {...settings}>
                 {data.map((item) => (
                     <div>
-                        <div className="carrousel_image" style={{backgroundImage:`url(${item.img})`,height:`${window.innerHeight}px`}}>
+                        <div className="carrousel_image" style={{backgroundImage:`url(${item.img})`}}>
                             <div className="columns">
-                                <div className="column">
+                                <div className="column hero-left-column">
                                     <div className="hero-left-desc">
                                         <Fade>
                                             <h1 className="hero-left-desc-h1-link">{item.to && <Link to={item.to}>{item.link}</Link>}</h1>
@@ -67,7 +69,7 @@ export default class SimpleSlider extends Component {
                                         <Button to={item.to} value="Подробнее"/>
                                     </div>
                                 </div>
-                                {item.img && <div className="column">
+                                {item.img && <div className="column hero-right-column">
                                     <Zoom>
                                         <img src={item.icon} className="hero-right-img" alt="" />
                                     </Zoom>

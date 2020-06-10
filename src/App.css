@@ -129,13 +129,14 @@ a {
 }
 
 .carrousel_wrapper {
-  height:600px;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .carrousel_image {
   background-size: cover !important;
   background-position: center;
+  min-height: 100vh;
 }
 
 .hero-left-desc {
@@ -183,6 +184,10 @@ a {
   padding: 100px;
 }
 
+.MuiSvgIcon-root {
+  color:white
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -215,7 +220,28 @@ a {
 }
 
 @media screen and (max-width: 414px) {
-  .featured-flowers {
-    padding: 50px;
+  .hero-left-desc {
+    max-width:300px;
+    margin:100px auto;
+  }
+  .hero-right-column {
+    display: none;
+  }
+
+  .hero-left-desc-h1-link {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .hero-left-desc-title, .hero-left-desc-desc {
+    font-size: 20px;
+  }
+
+  .download-presentation-section {
+    padding: 20px;
+  }
+
+  .download-presentation-section-subtitle {
+    font-size: 16px;
   }
 }
