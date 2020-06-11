@@ -6,6 +6,7 @@ import styled from 'styled-components'
 export default function CustomCard(props) {
   const Card = styled.div`
     max-width: 600px;
+    min-height: 540px
     margin: 40px auto;
     background-color: #F7F7E9;
     color: #444;
