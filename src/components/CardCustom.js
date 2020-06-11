@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export default function CustomCard(props) {
   const Card = styled.div`
-    width: 600px;
+    max-width: 600px;
     margin: 40px auto;
     background-color: #F7F7E9;
     color: #444;
@@ -29,6 +29,13 @@ export default function CustomCard(props) {
     margin: 20px;
     position: relative;
     z-index: 1;
+
+    @media (max-width: 414px) {
+      width:100px;
+      height: 100px;
+      float: center;
+      margin: 10px;
+    }
   `
 
   const Bio = styled.p`
@@ -38,8 +45,8 @@ export default function CustomCard(props) {
   `
   return (
     <div>
-      {props.data.map(item => (
-        <Card>
+      {props.data.map((item, index) => (
+        <Card key={index}>
         <Header>
           {item.name}
         </Header>

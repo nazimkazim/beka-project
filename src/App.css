@@ -266,4 +266,8 @@ a {
   .download-presentation-section-subtitle {
     font-size: 16px;
   }
+
+  .about-us-section {
+    padding: 10px;
+  }
 }

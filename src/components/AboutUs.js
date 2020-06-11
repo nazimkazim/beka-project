@@ -18,16 +18,16 @@ function AboutUs() {
   return (
     <section className="section about-us-section">
     <div className="container">
-      <h1 className="title has-text-white-ter has-text-primary-light">О компании UVISION</h1>
-      <h2 className="subtitle has-text-grey-lighter">
+      <h1 className="title has-text-white-ter has-text-primary-light mt-4">О компании UVISION</h1>
+      <h2 className="subtitle has-text-grey-lighter is-size-5-mobile">
           Наше видение: создать надежную платформу для внешней технической поддержки и развертывания с помощью постоянного развития нужных людей.
       </h2>
       <div className="about-us-image mt-4">
-        <figure class="image">
+        <figure className="image">
           <img src={photoBeka} alt=""/>
         </figure>
       </div>
-      <p className="content is-large mt-4 has-text-grey-lighter">
+      <p className="content is-large mt-4 has-text-grey-lighter is-size-6-mobile">
         Мы являемся молодой компанией, занимающейся продажей, установкой/вводом в эксплуатацию и поддержкой систем управления автопарком, систем предотвращения 
         столкновений/оповещения, систем контроля усталости и интерферометрических радаров для мониторинга устойчивости склона.
         
