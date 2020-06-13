@@ -220,12 +220,13 @@ a {
   min-height: 400px;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   padding: 10px;
 }
 
 .why-us-container {
-  max-width: 1000px;
+  min-width: 1000px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -235,20 +236,21 @@ a {
   width:50px;
 }
 
-.why-us-container .card {
+.why-us-container .why-us-card {
   position: relative;
   cursor: pointer;
+  margin-right: 5px;
 }
 
-.why-us-container .card .face {
-  width: 200px;
+.why-us-container .why-us-card .face {
+  min-width: 200px;
   height: 200px;
   transition: 0.5s;
 }
 
-.why-us-container .card .face.face1 {
+.why-us-container .why-us-card .face.face1 {
   position: relative;
-  background: #563bd1;
+  background: #A8A4A4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,20 +258,45 @@ a {
   transform:translateY(100px);
 }
 
-.why-us-container .card:hover .face.face1 {
+.why-us-container .why-us-card:hover .face.face1 {
   background: #ffa550;
   transform:translateY(0)
 }
 
-.why-us-container .card .face.face1 .content {
+.why-us-container .why-us-card .face.face1 .content {
   opacity: 0.8;
   transition: 0.8s;
 }
 
-.why-us-container .card:hover .face.face1 .content {
+.why-us-container .why-us-card:hover .face.face1 .content {
   opacity: 1;
 }
 
+
+
+.why-us-container .why-us-card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color:#fff;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.why-us-container .why-us-card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 10px rgb(0,0,0,0.8);
+  transform: translateY(-100px);
+}
+
+.why-us-container .why-us-card:hover .face.face2 {
+  transform: translateY(0);
+}
 
 
 
