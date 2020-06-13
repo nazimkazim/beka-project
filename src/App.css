@@ -226,10 +226,12 @@ a {
 }
 
 .why-us-container {
-  min-width: 1000px;
+  width: 1500px;
   position: relative;
   display: flex;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 .why-us-container .content img {
@@ -243,9 +245,10 @@ a {
 }
 
 .why-us-container .why-us-card .face {
-  min-width: 200px;
+  width: 200px;
   height: 200px;
   transition: 0.5s;
+  margin: 0 auto;
 }
 
 .why-us-container .why-us-card .face.face1 {
@@ -358,5 +361,9 @@ a {
 
   .about-us-section {
     padding: 10px;
+  }
+
+  .why-us-container {
+    max-width: 400px;
   }
 }
