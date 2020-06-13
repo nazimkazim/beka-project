@@ -18,9 +18,10 @@ export default function CustomCard(props) {
     margin: 0;
     padding: 20px;
     text-align: center;
+    font-size:24px;
     font-family: Roboto Slab;
     font-weight: 700;
-    background-color: #4DD65F;
+    background-color: #A4A0A3;
   `
 
   const Image = styled.img`
@@ -42,6 +43,7 @@ export default function CustomCard(props) {
   const Bio = styled.p`
     position: relative;
     margin: 20px;
+    font-size:16px;
     font-family: Merriweather Sans;
   `
   return (

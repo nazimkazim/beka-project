@@ -27,7 +27,7 @@ export default class Footer extends Component {
       },
       {
         contacts: [
-          { text: "Мкр. Достык, ЖК Аралн 52-21", icon: <LocationOnRoundedIcon/> },
+          { text: "РК, г. Алматы, Ауэзовский район, 050062, мкр. 4, дом 14, кв.3", icon: <LocationOnRoundedIcon/> },
           { text: "+7 701 037 8388", icon: <PhoneEnabledRoundedIcon/> },
           { text: "bekqlive@gmail.com", icon: <EmailRoundedIcon/> }
         ]
