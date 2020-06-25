@@ -1,7 +1,6 @@
 import React from 'react'
 import photoBeka from '../images/photo-beka.PNG'
 import bekaPhoto from '../images/bekaPhoto.jpeg'
-import yerkebulanPhoto from '../images/yerkebulanPhoto.jpeg'
 import victorNevzorov from '../images/victorNevzorov.jpeg'
 import CardCustom from './CardCustom'
 
@@ -14,7 +13,8 @@ function AboutUs() {
     },
     {name:'Виктор Невзоров',
     photo:victorNevzorov,
-    bio:'Виктор имеет опыт работы в открытых и подземных горных работах. Запуск различных систем диспетчеризации горно-транспортного комплекса и высокоточного позиционирования тяжелой техники. Консультационные работы по подземным горным работам. Разработка систем отчётности для предприятий.'}
+    bio:'Виктор имеет опыт работы в открытых и подземных горных работах. Запуск различных систем диспетчеризации горно-транспортного комплекса и высокоточного позиционирования тяжелой техники. Консультационные работы по подземным горным работам. Разработка систем отчётности для предприятий.'
+    }
   ]
   return (
     <section className="section about-us-section">
