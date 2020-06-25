@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../components/Hero";
-import DownloadPresentationComp from '../components/DownloadPresentationComp'
 import AboutUs from "../components/AboutUs";
 import WhyUs from "../components/WhyUs";
 //import Banner from "../components/Banner";
@@ -12,7 +11,6 @@ const Home = () => {
   return (
       <>
         <Hero />
-        <DownloadPresentationComp/>
         <AboutUs/>
         <WhyUs/>
       </>

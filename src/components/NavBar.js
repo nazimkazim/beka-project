@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Navbar } from "react-bulma-components";
 import { Link } from "react-router-dom";
-import whatsapp from "../images/whatsapp.svg";
 
 export default class NavBar extends Component {
   // set active state for hamburger
@@ -21,7 +20,7 @@ export default class NavBar extends Component {
         >
           <Navbar.Brand>
             <Navbar.Item>
-              <Link to="/">UVISION</Link>
+              <Link to="/"><strong>uVision Safety Solutions</strong></Link>
             </Navbar.Item>
             <Navbar.Burger
               active={this.state.active}
@@ -31,21 +30,16 @@ export default class NavBar extends Component {
           <Navbar.Menu>
             <Navbar.Container>
               <Navbar.Item>
+                <Link to="/solutions">Решения</Link>
+              </Navbar.Item>
+              <Navbar.Item>
                 <Link to="/sevice">Услуги</Link>
               </Navbar.Item>
               <Navbar.Item>
                 <Link to="/me">О нас</Link>
               </Navbar.Item>
               <Navbar.Item>
-                <Link to="/blogs">Блог</Link>
-              </Navbar.Item>
-            </Navbar.Container>
-            <Navbar.Container position="end">
-              <Navbar.Item>
-                <span>
-                  <img src={whatsapp} alt="whatsapp icon" />
-                </span>
-                <span>+7-701-121-4114</span>
+                <Link to="/blogs">Новости</Link>
               </Navbar.Item>
             </Navbar.Container>
           </Navbar.Menu>

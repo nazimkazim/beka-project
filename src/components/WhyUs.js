@@ -23,7 +23,7 @@ function WhyUs() {
     {
       moto:"Всесторонний опыт в добыче",
       icon:miningIcon,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+      desc:"Благодаря практическому опыту и технической грамотности мы гарантируем надежное качество проектов"
     },
     {
       moto:"Профильное образование",

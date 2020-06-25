@@ -130,7 +130,7 @@ a {
 
 .carrousel_wrapper {
   overflow: hidden;
-  min-height: 100vh;
+  height: 80vh;
 }
 
 .carrousel_image {
@@ -206,12 +206,15 @@ a {
 }
 
 .about-us-section {
-  background-color: #2C2D3D;
   padding: 100px;
+  background-image: url('../src/images/bekaimages/IMG_3932-darken.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .why-us-section {
-  background-image: url("./images/arches-darken.png");
+  background-image: url("./images/bekaimages/IMG_0852.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-position: center;
