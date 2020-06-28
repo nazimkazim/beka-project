@@ -33,8 +33,8 @@ const DescriptionContent = styled.div`
 `;
 
 const DescriptionImageContainer = styled.div`
-  width:80px;
-  height:80px;
+  width:75px;
+  height:60px;
 
   & > img {
     height:100%;
