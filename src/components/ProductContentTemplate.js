@@ -5,13 +5,15 @@ const Header = styled.h1`
   font-family:Roboto;
   font-size:30px;
   font-weight:bold;
+  margin-top:${props => props.marginTop && props.marginTop};
 `;
 
 const Subheader = styled.h2`
   font-family:Roboto;
   font-size:20px;
-  font-weight:700;
-  margin-top:80px;
+  font-weight:500;
+  margin-top:${props => props.marginTop && props.marginTop};
+  margin-bottom:${props => props.marginBottom && props.marginBottom};
 `;
 
 const DescriptionContainer = styled.div`
@@ -41,17 +43,28 @@ const DescriptionImageContainer = styled.div`
   }
 `;
 
-function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features }) {
+const SupportDescription = styled.p`
+  font-family:Roboto;
+  font-size:18px;
+  font-weight:400;
+  margin-top:${props => props.marginTop && props.marginTop};
+`
+
+const HR = styled.hr`
+  border-top: 2px solid black;
+`;
+
+function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support }) {
 
   return (
     <section class="section">
       <div class="container">
         <Header class="title">{ header }</Header>
-        <Subheader class="subtitle">
+        <Subheader class="subtitle" marginTop="80px">
           { subheader }
         </Subheader>
         <DescriptionContainer className="columns">
-          <DescriptionIcon className="column is-one-fifth">
+          <DescriptionIcon className="column is-1">
             <DescriptionImageContainer>
               <img src={ iconHpposition } alt="" />
             </DescriptionImageContainer>
@@ -63,7 +76,7 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
 
         { features.map((item) => (
           <DescriptionContainer className="columns">
-            <DescriptionIcon className="column is-one-fifth">
+            <DescriptionIcon className="column is-1">
               <DescriptionImageContainer>
                 <img src={ item.icon } alt="" />
               </DescriptionImageContainer>
@@ -74,8 +87,29 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
             </DescriptionContent>
           </DescriptionContainer>
         )) }
-
-
+        <HR />
+        { solution.map((item) => (
+          <>
+            <Header class="title">{ item.header }</Header>
+            <Subheader class="subtitle" marginBottom="50px">
+              { item.subheader }
+            </Subheader>
+            <DescriptionContainer className="columns">
+              <DescriptionIcon className="column is-1">
+                <DescriptionImageContainer>
+                  <img src={ item.icon } alt="" />
+                </DescriptionImageContainer>
+              </DescriptionIcon>
+              <DescriptionContent className="column">
+                { item.description }
+              </DescriptionContent>
+            </DescriptionContainer>
+          </>
+        )) }
+        <HR />
+        <Header class="title" marginTop="50px">{ support.header }</Header>
+        <img src={support.image} alt=""/>
+        <SupportDescription marginTop="50px">{support.description}</SupportDescription>
       </div>
     </section>
   );
