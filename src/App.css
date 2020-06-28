@@ -130,7 +130,7 @@ a {
 
 .carrousel_wrapper {
   overflow: hidden;
-  height: 80vh;
+  height: 98vh;
 }
 
 .carrousel_image {
@@ -138,6 +138,22 @@ a {
   background-position: center;
   min-height: 100vh;
 }
+
+.slick-dots {
+  bottom: 60px;
+}
+
+.slick-dots li button:before {
+  display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    content: "";
+    background: url('./images//dot.png') no-repeat 0 0;
+    background-size: 100%;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
 
 .hero-left-desc {
   width:500px;
@@ -207,7 +223,7 @@ a {
 
 .about-us-section {
   padding: 100px;
-  background-image: url('../src/images/bekaimages/IMG_3932-darken.jpg');
+  background-image: url('../src/images/bekaimages/IMG_3932-darken-resized-desktop.jpg');
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
