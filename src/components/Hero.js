@@ -13,12 +13,12 @@ import PIN24 from '../images/PIN-24.png'
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
-        fade: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots:true
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 800,
+      cssEase: "ease-in",
+      dots:true
       };
     const data = [
         {
