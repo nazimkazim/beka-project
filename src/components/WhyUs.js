@@ -1,9 +1,7 @@
 import React from 'react'
 import rightPeople from '../images/right-people.png'
-import accuracy from '../images/accuracy.png'
 import miningIcon from '../images/mining-icon.png'
 import profileEducation from '../images/profile-education.png'
-import standard from '../images/standard.png'
 import tracking from '../images/tracking.png'
 import selection from '../images/selection.png'
 import CardRow from './Card/CardRow'
@@ -11,14 +9,9 @@ import CardRow from './Card/CardRow'
 function WhyUs() {
   const data=[
     {
-      moto:"Правильные люди в правильном месте",
+      moto:"Партнерская поддержка",
       icon:rightPeople,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-    },
-    {
-      moto:"Порядочность и точность",
-      icon:accuracy,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+      desc:"Мы предлагаем своим партнёрам профессиональную, техническую и информационную поддержку на всех стадиях работ"
     },
     {
       moto:"Всесторонний опыт в добыче",
@@ -26,24 +19,19 @@ function WhyUs() {
       desc:"Благодаря практическому опыту и технической грамотности мы гарантируем надежное качество проектов"
     },
     {
-      moto:"Профильное образование",
+      moto:"Повышение эффективности и производительности",
       icon:profileEducation,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-    },
-    {
-      moto:"Работа по современным стандартам",
-      icon:standard,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+      desc:"Наши решения помогут вам достигнуть нового уровня эффективности и производительности"
     },
     {
       moto:"Непрерывное обучение и отслеживание новых продукты для разработки",
       icon:tracking,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+      desc:"Мы предлагаем широкие компетенции в сфере горных работ и безопасности в горном деле"
     },
     {
       moto:"Выбор самых оптимальных решений",
       icon:selection,
-      desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+      desc:"Мы продаем не оборудование, мы продаем решение проблем партнера и помогаем реализовать новые возможности"
     }
   ]
   return (
