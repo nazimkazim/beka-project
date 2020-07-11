@@ -35,8 +35,8 @@ const DescriptionContent = styled.div`
 `;
 
 const DescriptionImageContainer = styled.div`
-  width:75px;
-  height:60px;
+  width:${props => props.iconWidth || '75px'};
+  height:${props => props.iconHeight || '60px'};
 
   & > img {
     height:100%;
@@ -48,13 +48,13 @@ const SupportDescription = styled.p`
   font-size:18px;
   font-weight:400;
   margin-top:${props => props.marginTop && props.marginTop};
-`
+`;
 
 const HR = styled.hr`
   border-top: 2px solid black;
 `;
 
-function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support }) {
+function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support, iconIsLarger }) {
 
   return (
     <section class="section">
@@ -64,10 +64,13 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
           { subheader }
         </Subheader>
         <DescriptionContainer className="columns">
-          <DescriptionIcon className="column is-1">
-            <DescriptionImageContainer>
+          <DescriptionIcon className={ `${iconIsLarger ? 'column is-6' : 'column is-1'}` }>
+            { iconIsLarger ? <DescriptionImageContainer iconWidth="360px" iconHeight="280px">
               <img src={ iconHpposition } alt="" />
-            </DescriptionImageContainer>
+            </DescriptionImageContainer> : <DescriptionImageContainer>
+                <img src={ iconHpposition } alt="" />
+              </DescriptionImageContainer> }
+
           </DescriptionIcon>
           <DescriptionContent className="column">
             { descriptionContent }
@@ -108,8 +111,8 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
         )) }
         <HR />
         <Header class="title" marginTop="50px">{ support.header }</Header>
-        <img src={support.image} alt=""/>
-        <SupportDescription marginTop="50px">{support.description}</SupportDescription>
+        <img src={ support.image } alt="" />
+        <SupportDescription marginTop="50px">{ support.description }</SupportDescription>
       </div>
     </section>
   );
