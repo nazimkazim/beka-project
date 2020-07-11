@@ -110,12 +110,15 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
           </>
         )) }
         <HR />
-        <Header class="title" marginTop="50px">{ precision.header }</Header>
-        {marginTop && <div style={{'marginTop':marginTop}}></div>}
-        
-        <img src={ precision.image } alt="" />
-        <SupportDescription marginTop="50px">{ precision.description }</SupportDescription>
-        <HR />
+        { precision && (
+          <>
+            <Header class="title" marginTop="50px">{ precision.header }</Header>
+            { marginTop && <div style={ { 'marginTop': marginTop } }></div> }
+            <img src={ precision.image } alt="" />
+            <SupportDescription marginTop="50px">{ precision.description }</SupportDescription>
+            <HR />
+          </>
+        ) }
         <Header class="title" marginTop="50px">{ support.header }</Header>
         <img src={ support.image } alt="" />
         <SupportDescription marginTop="50px">{ support.description }</SupportDescription>
