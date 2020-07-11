@@ -5,7 +5,7 @@ import ProductContentTemplate from '../components/ProductContentTemplate';
 import iconPreventCollison from '../images/iconPreventCollison.jpg';
 import iconFeatures from '../images/RR_icon_feature.png';
 import modules from '../images/modules.png';
-import cube from '../images/cube.png';
+import precisionImage from '../images/precison.png'
 import universalSupport from '../images/universalSupport.png';
 
 function PrecisionPositionComp() {
@@ -44,6 +44,11 @@ function PrecisionPositionComp() {
         icon: modules
       }
     ],
+    precision: {
+      header: 'Разница в сантиметровой точности',
+      image: precisionImage,
+      description: 'Традиционные продукты для предотвращения столкновений используют GPS (показан сверху), ежедневно создавая множество ложных срабатываний. Эти системы быстро подрывают доверие оператора и теряют эффективность. DriveAssist (показан внизу) использует высокоточную GNSS (HPGNSS), а также интеллектуальные алгоритмы и точное отслеживание курса для более точного отслеживания транспортных средств и прогнозирования их маршрутов. Это уменьшает ложные срабатывания сигнала тревоги, повышает доверие оператора и помогает создать более безопасную и эффективную среду для работы.'
+    },
     support: {
       header: 'Универсальная  поддержка машин',
       image: universalSupport,
@@ -53,7 +58,7 @@ function PrecisionPositionComp() {
 return (
   <div>
     <HeroComp background={ content.backgroundImage } title={ content.header } />
-    <ProductContentTemplate header={ content.header } subheader={ content.subheader } descriptionContent={ content.descriptionContainer.descriptionContent } iconHpposition={ content.descriptionContainer.icon } features={ content.features } solution={ content.solution } support={ content.support } iconIsLarger="true" />
+    <ProductContentTemplate header={ content.header } subheader={ content.subheader } descriptionContent={ content.descriptionContainer.descriptionContent } iconHpposition={ content.descriptionContainer.icon } features={ content.features } solution={ content.solution } support={ content.support } precision={content.precision} iconIsLarger="true" marginTop="20px" />
   </div>
 );
 }

@@ -54,7 +54,7 @@ const HR = styled.hr`
   border-top: 2px solid black;
 `;
 
-function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support, iconIsLarger }) {
+function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support, precision, marginTop, iconIsLarger }) {
 
   return (
     <section class="section">
@@ -109,6 +109,12 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
             </DescriptionContainer>
           </>
         )) }
+        <HR />
+        <Header class="title" marginTop="50px">{ precision.header }</Header>
+        {marginTop && <div style={{'marginTop':marginTop}}></div>}
+        
+        <img src={ precision.image } alt="" />
+        <SupportDescription marginTop="50px">{ precision.description }</SupportDescription>
         <HR />
         <Header class="title" marginTop="50px">{ support.header }</Header>
         <img src={ support.image } alt="" />
