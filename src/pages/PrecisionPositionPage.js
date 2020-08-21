@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroComp from '../components/HeroComp';
-import miningHero from '../images/mining-hero.jpeg';
 import ProductContentTemplate from '../components/ProductContentTemplate';
 import iconHpposition from '../images/RR_icon_hpposition-rgb-300x300.png'
 import iconFeatures from '../images/RR_icon_feature.png'
