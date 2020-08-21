@@ -5,6 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 import { Link } from "react-router-dom";
 import Button from './Button'
 import mainSlider1 from '../images/main-slider-1.jpg';
+import mainSlider2 from '../images/main-slider-2.jpg';
 import soberEyeBack from '../images/sobe-eye-back.webp';
 import soberEyeLogo from '../images/sober-eye-logo.jpg';
 
@@ -21,17 +22,18 @@ export default class SimpleSlider extends Component {
       };
     const data = [
         {
-            link:'Система предотвращения столкновений RIGIDROBOTICS.',
+            link:'Система предотвращения столкновений RIGIDROBOTICS',
             to:'prevent-collision',
             title:'Высокоточное решение для предотвращения столкновений.',
             desc:'Активация «Точности безопасности», потому что ложные тревоги убивают.',
             img: mainSlider1
         },
         {
-            link:'RigidPortal',
+            link:'Высокоточное позиционирование ковша и геометрия рукояти',
             to:'precision-position',
-            title:'Централизованное программное обеспечение для удаленного управления предприятием в реальном времени',
-            desc:'Быстрый доступ, обслуживание и управление данными оборудования и транспортных средств без необходимости покидать офис.',
+            title:'Включение «Точной или выборочной экскавации»',
+            desc:'Точная или выборочная выемка руды позволяет точно знать, где копает ковш. Таким образом, рудник может планировать выборочную выемку руды с разным содержанием руды на разной высоте уступа.',
+            img: mainSlider2
         },
         {
             link:'Sober eye',
@@ -72,7 +74,7 @@ export default class SimpleSlider extends Component {
                                 </div>
                                 {item.img && <div className="column hero-right-column">
                                     <Zoom>
-                                        <img src={item.icon} className="hero-right-img" alt="" />
+                                        <img src={item.icon} className="hero-right-img" alt="icon" />
                                     </Zoom>
                                 </div>}
                             </div>
