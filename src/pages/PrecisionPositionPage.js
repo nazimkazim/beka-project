@@ -11,7 +11,7 @@ import universalSupport from '../images/universalSupport.png'
 function PrecisionPositionComp() {
   const content = {
     header:'Высокоточное позиционирование, направление и 3D-ориентация',
-    backgroundImage:miningHero,
+    backgroundImage:'',
     subheader:'Функция «Precision Mining». Современные горнодобывающие предприятия рассматривают высокоточное позиционирование как благоприятную инфраструктуру для всего автопарка.',
     descriptionContainer:{
       icon:iconHpposition,

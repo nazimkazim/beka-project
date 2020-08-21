@@ -4,45 +4,48 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { Link } from "react-router-dom";
 import Button from './Button'
-import miningHero from '../images/mining-hero.jpeg'
-import mining1 from '../images/mining1.jpg'
-import ai from '../images/ai.png'
-import RRrigidportalRGB from '../images/RR_rigidportal-RGB.png'
-import PIN24 from '../images/PIN-24.png'
+import mainSlider1 from '../images/main-slider-1.jpg';
+import soberEyeBack from '../images/sobe-eye-back.webp';
+import soberEyeLogo from '../images/sober-eye-logo.jpg';
 
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
-      infinite: true,
+      infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoPlay: true,
       speed: 800,
       cssEase: "ease-in",
       dots:true
       };
     const data = [
         {
+            link:'Система предотвращения столкновений RIGIDROBOTICS.',
+            to:'prevent-collision',
+            title:'Высокоточное решение для предотвращения столкновений.',
+            desc:'Активация «Точности безопасности», потому что ложные тревоги убивают.',
+            img: mainSlider1
+        },
+        {
             link:'RigidPortal',
             to:'precision-position',
             title:'Централизованное программное обеспечение для удаленного управления предприятием в реальном времени',
             desc:'Быстрый доступ, обслуживание и управление данными оборудования и транспортных средств без необходимости покидать офис.',
-            img:miningHero,
-            icon:RRrigidportalRGB
+        },
+        {
+            link:'Sober eye',
+            to:'sober-eye',
+            title:'Снижение количества несчастных случаев на рабочем месте с инновационным решением по безопасности.',
+            desc:'Оценить риск нарушения состояния усталости, алкоголь и наркотики на рабочем места, когда это наиболее важно.',
+            img: soberEyeBack,
+            logo: soberEyeLogo
         },
         {
             link:'Технологические услуги',
             to:'sevices',
             title:'Специально для горнодобывающей промышленности',
             desc:'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы.',
-            img:mining1
-        },
-        {
-            link:'Система предотвращения столкновений RIGIDROBOTICS.',
-            to:'prevent-collision',
-            title:'Высокоточное решение для предотвращения столкновений.',
-            desc:'Активация «Точности безопасности», потому что ложные тревоги убивают.',
-            img:ai,
-            icon:PIN24
         }
 
 
@@ -56,17 +59,16 @@ export default class SimpleSlider extends Component {
                             <div className="columns">
                                 <div className="column hero-left-column">
                                     <div className="hero-left-desc">
+                                    {item.logo && <img src={item.logo} className="sober-eye-logo"/>}
                                         <Fade>
                                             <h1 className="hero-left-desc-h1-link">{item.to && <Link to={item.to}>{item.link}</Link>}</h1>
                                         </Fade>
-                                        <Zoom left cascade>
                                             <h1 className="hero-left-desc-title">{item.title}</h1>
-                                        </Zoom>
-                                        <Zoom right cascade>
                                             <p className="hero-left-desc-desc">{item.desc}</p>
-                                        </Zoom>
                                         <Button to={item.to} value="Подробнее"/>
+                                        
                                     </div>
+                                
                                 </div>
                                 {item.img && <div className="column hero-right-column">
                                     <Zoom>
@@ -74,7 +76,6 @@ export default class SimpleSlider extends Component {
                                     </Zoom>
                                 </div>}
                             </div>
-                            
                         </div>
                     </div>
                 ))}

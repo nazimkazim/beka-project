@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroComp from '../components/HeroComp';
-import ai from '../images/ai.png';
+import mainSlider1 from '../images/main-slider-1.jpg';
 import ProductContentTemplate from '../components/ProductContentTemplate';
 import iconPreventCollison from '../images/iconPreventCollison.jpg';
 import iconFeatures from '../images/RR_icon_feature.png';
@@ -11,7 +11,7 @@ import universalSupport from '../images/universalSupport.png';
 function PrecisionPositionComp() {
   const content = {
     header: 'Система предотвращения столкновений RIGIDROBOTICS',
-    backgroundImage: ai,
+    backgroundImage: mainSlider1,
     subheader: 'Высокоточное решение для предотвращения столкновений. Активация «Точности безопасности», потому что ложные тревоги убивают.',
     descriptionContainer: {
       icon: iconPreventCollison,

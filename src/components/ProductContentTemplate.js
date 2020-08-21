@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Header = styled.h1`
   font-family:Roboto;
-  font-size:30px;
+  font-size:20px;
   font-weight:bold;
   margin-top:${props => props.marginTop && props.marginTop};
 `;
@@ -17,19 +17,19 @@ const Subheader = styled.h2`
 `;
 
 const DescriptionContainer = styled.div`
-  min-height:200px;
+  min-height:80px;
   padding:20px;
 `;
 
 const DescriptionIcon = styled.div`
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:start;
 `;
 
 const DescriptionContent = styled.div`
   height:100%;
-  padding:10px;
+  padding:5px;
   font-size:18px;
   font-family:Roboto;
 `;
@@ -78,7 +78,7 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
         </DescriptionContainer>
 
         { features.map((item) => (
-          <DescriptionContainer className="columns">
+          <DescriptionContainer className="columns product-description-column">
             <DescriptionIcon className="column is-1">
               <DescriptionImageContainer>
                 <img src={ item.icon } alt="" />
