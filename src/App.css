@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+}
 .hero-c {
   background-color: #fff4e6;
   background-image: url('./images/backAlb.jpeg');
@@ -334,6 +342,47 @@ a {
   transform: translateY(0);
 }
 
+.sober-eye-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 600px;
+  /* background-color: #041f22; */
+}
+
+.sober-eye-section-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bfc6df;
+  padding: 20px;
+  text-align: center;
+}
+
+.sober-eye-section-left-desc-container {
+  min-width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  /* background-color: #ffa550; */
+}
+
+.sober-eye-section-left-desc-header {
+  font-size: 30px;
+  color: #178a5a;
+}
+
+.sober-eye-section-left-desc-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  list-style: disc;
+}
+
+.sober-eye-section-left-desc-list li {
+  align-self: flex-start;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 300px;
@@ -366,6 +415,7 @@ a {
     max-width: 300px;
     margin: 100px auto;
   }
+
   .hero-right-column {
     display: none;
   }
@@ -400,5 +450,29 @@ a {
 
   .why-us-container {
     max-width: 400px;
+  }
+
+  .sober-eye-section {
+    grid-template-columns: 100%;
+  }
+
+  .sober-eye-section-left-desc-container {
+    min-width: 300px;
+    min-height: 100px;
+  }
+
+  .sober-eye-section-left-desc-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    list-style: disc;
+  }
+
+  .sober-eye-section-left-desc-header {
+    font-size: 20px;
+  }
+
+  .sober-eye-section-left-desc-list li {
+    font-size: 15px;
   }
 }
