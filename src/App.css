@@ -401,6 +401,25 @@ a {
   align-self: flex-start;
 }
 
+.sober-eye-section-left-desc-extra-moto {
+  font-family: montserrat,sans-serif !important;
+  font-size:30px;
+  color: #178A5A;
+  margin-top: 60px;
+  display: inline-block;
+
+}
+
+.sober-eye-paragraph {
+  font-size: 16px;
+  font-family: montserrat,sans-serif !important;
+  width: 486px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 14px;
+  text-align: start;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 300px;
@@ -475,7 +494,7 @@ a {
   }
 
   .sober-eye-section-left-desc-container {
-    min-width: 300px;
+    min-width: 340px;
     min-height: 100px;
   }
 
@@ -492,5 +511,9 @@ a {
 
   .sober-eye-section-left-desc-list li {
     font-size: 15px;
+  }
+
+  .sober-eye-paragraph {
+    max-width: 340px;
   }
 }
