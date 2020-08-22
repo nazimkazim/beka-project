@@ -345,7 +345,6 @@ a {
 
 .sober-eye-section {
   display: grid;
-  grid-template-columns: 50% 50%;
   min-height: 600px;
   /* background-color: #041f22; */
 }
@@ -366,7 +365,14 @@ a {
 }
 
 .sober-eye-section-left-desc-header {
+  display: block;
   font-size: 30px;
+  color: #178a5a;
+}
+
+.sober-eye-section-left-desc-subtitle {
+  display: block;
+  font-size: 16px;
   color: #178a5a;
 }
 
@@ -417,6 +423,21 @@ a {
   font-weight: 400;
   margin-top: 14px;
   text-align: start;
+}
+
+.sobereye-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 300px;
+  padding:100px;
+}
+
+.sobereye-video-container h1 {
+  font-size: 40px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {

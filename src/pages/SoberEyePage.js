@@ -3,7 +3,8 @@ import SoberEyeVirtualGlass from '../images/sober-eye-virtual-glass.webp';
 import Dashboardlaptop from '../images/dashboardlaptop.webp';
 import SoberEyeTarget from '../images/sober-eye-target.PNG';
 import SoberEyeSupport from '../images/sober-eye-support.PNG';
-
+import SoberEyeEye from '../images/sober-eye-eye.PNG';
+import VideoComponent from '../components/videoComponent'
 export default function SoberEyePage() {
 
   const data = {
@@ -54,7 +55,17 @@ export default function SoberEyePage() {
         ],
         image: SoberEyeSupport,
         color: '#bfc6df',
-        reversed:true
+        reversed: true
+      },
+      {
+        header: 'Научная часть',
+        subtitle: 'Глаза - это окно в мозг',
+        paragraphs: [
+          `Технология SOBEREYE обнаруживает нарушения в работе мозга! Технология SOBEREYE была разработана в сотрудничестве с экспертами в области нейробиологии, офтальмологии, распознавания радужной оболочки и обработки изображений.`,
+          `Устройство измеряет изменения зрачкового светового рефлекса (ЗСР), реакции зрачка на изменение интенсивности света.ЗСР - это непроизвольный рефлекс, контролируемый вегетативной нервной системой`,
+          'Изменение ЗСР по сравнению с нормальным состоянием(исходный уровень) является признаком аномалии функции мозга из-за усталости, недосыпания, алкоголя, употребления наркотиков (законных, незаконных и рецептурных) или неврологического расстройства'
+        ],
+        image: SoberEyeEye
       }
     ]
   };
@@ -62,17 +73,26 @@ export default function SoberEyePage() {
   return (
     <>
       { data.soberSectionsArr.map((item) => (
-        <div className="sober-eye-section" style={ { backgroundColor: item.color } }>
+        <div className="sober-eye-section" style={ {
+          backgroundColor: item.color,
+          gridTemplateColumns: `${item.full ? '100%' : '50% 50%'}`
+        } }>
           { item.reversed ? (
             <>
               <div className="sober-eye-section-half">
-                <img src={ item.image } alt="" />
+                { item.image && <img src={ item.image } alt="" /> }
               </div>
               <div className="sober-eye-section-half">
                 <div className="sober-eye-section-left-desc-container">
                   <span className="sober-eye-section-left-desc-header">
                     { item.header }
                   </span>
+                  { item.subtitle && (
+                    <span className="sober-eye-section-left-desc-subtitle">
+                      { item.subtitle }
+                    </span>
+                  ) }
+
                   { item.list && (<ul className="sober-eye-section-left-desc-list">
                     { item.list && item.list.map((i) => (
                       <li>{ i }</li>
@@ -100,6 +120,11 @@ export default function SoberEyePage() {
                     <span className="sober-eye-section-left-desc-header">
                       { item.header }
                     </span>
+                    { item.subtitle && (
+                      <span className="sober-eye-section-left-desc-subtitle">
+                        { item.subtitle }
+                      </span>
+                    ) }
                     { item.list && (
                       <ul className="sober-eye-section-left-desc-list">
                         { item.list.map((i) => (
@@ -123,13 +148,15 @@ export default function SoberEyePage() {
                   </div>
                 </div>
                 <div className="sober-eye-section-half">
-                  <img src={ item.image } alt="" />
+                  { item.image && <img src={ item.image } alt="" /> }
                 </div>
               </>
             ) }
-
+          
         </div>
       )) }
+      <VideoComponent src="https://www.youtube.com/embed/lBZWPNiXuk0" header="Как работает SOBEREYE"/>
+      <VideoComponent src="https://www.youtube.com/embed/Z7bTlHdkSMs" header="SOBEREYE - безопасное рабочее место"/>
     </>
 
   );

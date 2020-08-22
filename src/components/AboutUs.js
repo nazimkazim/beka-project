@@ -3,6 +3,7 @@ import bekaPhoto from '../images/bekaimages/beka-avatar.jpg';
 import victorNevzorov from '../images/victorNevzorov.jpeg';
 import alzhanovNurken from '../images/alzhanovNurken.jpeg';
 import esentai from '../images/esentai.jpeg';
+import baglanUtegen from '../images/bagaUtigen.jpeg';
 import CardCustom from './CardCustom';
 
 function AboutUs() {
@@ -31,12 +32,18 @@ function AboutUs() {
       bio: `Внешний консультант по геодезии/маркшейдерии. Магистр технических наук в области геодезии. Директор ТОО «SmartGEO» - поставки геодезического оборудования – тахеометры, GNSS, программного обеспечения; поставка и запуск систем мониторинга устойчивости бортов, запуск систем БПЛА для геодезии и строительства. Обучение, техническая поддержка клиентов.
       Сайт: http://s.geo.kz/
       `
+    },
+    {
+      name: 'Баглан Утегенов',
+      photo: baglanUtegen,
+      bio: `Магистр технических наук в области машиностроения. 
+      Запуск и эксплуатация оборудования службы электромеханических устройств метрополитена г. Алматы. Запуск и эксплуатация оборудования службы Электромеханических устройств. Планирование ППР, ТОиР. Работа со станками ЧПУ на заводе Alageum Electric. IV - квалификационная группа по электробезопасности до и выше 1000В.`
     }
   ];
   return (
     <section className="section about-us-section">
       <div className="container">
-        <h1 className="title has-text-white-ter has-text-primary-light mt-4">О компании UVISION</h1>
+        <h1 className="title has-text-white-ter has-text-primary-light mt-4">О компании uVision Safety Solutions</h1>
         <h2 className="subtitle has-text-grey-lighter is-size-5-mobile">
           Наше видение: создать надежную платформу для внешней технической поддержки и развертывания с помощью постоянного развития нужных людей.
       </h2>
