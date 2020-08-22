@@ -398,7 +398,7 @@ a {
   font-family: montserrat,sans-serif !important;
   font-style: italic;
   display: flex;
-  align-self: flex-start;
+  text-align: start;
 }
 
 .sober-eye-section-left-desc-extra-moto {
@@ -411,7 +411,6 @@ a {
 }
 
 .sober-eye-paragraph {
-  font-size: 16px;
   font-family: montserrat,sans-serif !important;
   width: 486px;
   font-size: 20px;
@@ -515,5 +514,21 @@ a {
 
   .sober-eye-paragraph {
     max-width: 340px;
+  }
+
+  .sober-eye-section-left-desc-extra-bolded {
+    font-size:20px;
+  }
+
+  .sober-eye-section-left-desc-extra-thin {
+    text-align: start;
+  }
+
+  .sober-eye-section-left-desc-extra-moto {
+    font-size: 20px;
+  }
+
+  .sober-eye-paragraph {
+    font-size: 14px;
   }
 }
