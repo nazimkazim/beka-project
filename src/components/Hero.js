@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import { Link } from "react-router-dom";
 import Button from './Button'
 import mainSlider1 from '../images/main-slider-1.jpg';
 import mainSlider2 from '../images/main-slider-2.jpg';
 import soberEyeBack from '../images/sobe-eye-back.webp';
 import soberEyeLogo from '../images/sober-eye-logo.jpg';
+import rigidRoboticsLogo from '../images/rigidlogo-rgb.png';
 
 export default class SimpleSlider extends Component {
   render() {
@@ -22,21 +22,22 @@ export default class SimpleSlider extends Component {
       };
     const data = [
         {
-            link:'Система предотвращения столкновений RIGIDROBOTICS',
+            link:'Система предотвращения столкновений',
             to:'prevent-collision',
             title:'Высокоточное решение для предотвращения столкновений.',
             desc:'Активация «Точности безопасности», потому что ложные тревоги убивают.',
-            img: mainSlider1
+            img: mainSlider1,
+            logo: rigidRoboticsLogo
         },
         {
             link:'Высокоточное позиционирование ковша и геометрия рукояти',
             to:'precision-position',
-            title:'Включение «Точной или выборочной экскавации»',
+            title:'Режим «Точной или выборочной экскавации»',
             desc:'Точная или выборочная выемка руды позволяет точно знать, где копает ковш. Таким образом, рудник может планировать выборочную выемку руды с разным содержанием руды на разной высоте уступа.',
-            img: mainSlider2
+            img: mainSlider2,
+            logo: rigidRoboticsLogo
         },
         {
-            link:'Sober eye',
             to:'sober-eye',
             title:'Снижение количества несчастных случаев на рабочем месте с инновационным решением по безопасности.',
             desc:'Оценить риск нарушения состояния усталости, алкоголь и наркотики на рабочем места, когда это наиболее важно.',
@@ -68,14 +69,9 @@ export default class SimpleSlider extends Component {
                                             <h1 className="hero-left-desc-title">{item.title}</h1>
                                             <p className="hero-left-desc-desc">{item.desc}</p>
                                         <Button to={item.to} value="Подробнее"/>
-                                        
                                     </div>
-                                
                                 </div>
                                 {item.img && <div className="column hero-right-column">
-                                    <Zoom>
-                                        <img src={item.icon} className="hero-right-img" alt="icon" />
-                                    </Zoom>
                                 </div>}
                             </div>
                         </div>

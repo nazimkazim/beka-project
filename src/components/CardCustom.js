@@ -9,6 +9,7 @@ export default function CustomCard(props) {
     min-height: 350px
     margin: 40px auto;
     background-color: #F7F7E9;
+    border-radius:10px;
     color: #444;
     overflow: hidden;
     box-shadow: 5px 5px 0 0 #aaa;
@@ -47,7 +48,7 @@ export default function CustomCard(props) {
     font-family: Merriweather Sans;
   `
   return (
-    <div>
+    <>
       {props.data.map((item, index) => (
         <Card key={index}>
         <Header>
@@ -59,7 +60,7 @@ export default function CustomCard(props) {
         </Bio>
       </Card>
       ))}
-    </div>
+    </>
     
 
   )

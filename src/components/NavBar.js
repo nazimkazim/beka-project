@@ -14,23 +14,37 @@ export default class NavBar extends Component {
     return (
       <div id="header">
         <Navbar
-          style={{ background: "white" }}
+          style={ { background: "white" } }
           fixed="top"
-          active={this.state.active}
+          active={ this.state.active }
         >
           <Navbar.Brand>
             <Navbar.Item>
               <Link to="/"><strong>uVision Safety Solutions</strong></Link>
             </Navbar.Item>
             <Navbar.Burger
-              active={this.state.active}
-              onClick={this.handleClick}
+              active={ this.state.active }
+              onClick={ this.handleClick }
             />
           </Navbar.Brand>
           <Navbar.Menu>
             <Navbar.Container>
-              <Navbar.Item>
-                <Link to="/solutions">Решения</Link>
+              <Navbar.Item dropdown hoverable href="#">
+                <Navbar.Link>
+                  Решения
+              </Navbar.Link>
+                <Navbar.Dropdown>
+                  <Navbar.Item href="#">
+                    <Link to="/precision-position">
+                      Система предотвращения столкновения
+                    </Link>
+                  </Navbar.Item>
+                  <Navbar.Item href="#">
+                    <Link to="/sober-eye">
+                      Система мониторинга персонала
+                    </Link>
+                  </Navbar.Item>
+                </Navbar.Dropdown>
               </Navbar.Item>
               <Navbar.Item>
                 <Link to="/sevice">Услуги</Link>
