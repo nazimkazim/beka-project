@@ -700,11 +700,15 @@ iframe, object, embed {
   }
 
   .sober-eye-section {
-    grid-template-columns: 100%;
+    grid-template-columns: 100% !important;
   }
 
   .meglab-functions {
     grid-template-columns: 100%;
+  }
+
+  .sober-eye-section {
+    grid-template: 100%;
   }
 
   .sober-eye-section-left-desc-container {
@@ -750,5 +754,14 @@ iframe, object, embed {
   .meglab-our-solution {
     grid-template-columns: 100%;
     display: grid;
+  }
+
+  iframe, object, embed {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .sobereye-video-container {
+    padding: 0;
   }
 }
