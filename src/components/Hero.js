@@ -9,7 +9,10 @@ import soberEyeBack from '../images/sobe-eye-back.webp';
 import soberEyeLogo from '../images/sober-eye-logo.jpg';
 import rigidRoboticsLogo from '../images/rigidlogo-rgb.png';
 import aibackground from '../images/AIbackground.jpg';
-import highprecisionbc from '../images/highprecisionbc.jpg'
+import highprecisionbc from '../images/highprecisionbc.jpg';
+import LogoImagingMeglab from '../images/logo-imagine-header.png';
+import meglabbc from '../images/meglabbc.jpg';
+
 
 export default class SimpleSlider extends Component {
     render() {
@@ -40,6 +43,12 @@ export default class SimpleSlider extends Component {
                 logo: soberEyeLogo
             },
             {
+                link: 'Решение для оптимизации подземных горных работ и повышение безопасности персонала',
+                to: 'meglab',
+                img: meglabbc,
+                logo: LogoImagingMeglab
+            },
+            {
                 link: 'Высокоточное позиционирование, направление и 3D-ориентация',
                 to: 'precision-position',
                 title: 'Режим «Точной добычи»',
@@ -57,13 +66,12 @@ export default class SimpleSlider extends Component {
             },
             {
                 link: 'Продвинутая аналитика и использование Искуственного Интелекта в горном деле',
-                to: 'sevices',
-                title: 'Новоя эра принятия решений на основе Искуственного Интелекта',
+                to: 'aianalytics',
+                title: 'Новая эра принятия решений на основе Искуственного Интелекта',
                 desc: 'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы',
-                img:aibackground,
+                img: aibackground,
                 logo: rigidRoboticsLogo
             }
-
 
         ];
         return (

@@ -6,6 +6,7 @@ const Header = styled.h1`
   font-size:20px;
   font-weight:bold;
   margin-top:${props => props.marginTop && props.marginTop};
+  margin-bottom:${props => props.marginBottom && props.marginBottom};
 `;
 
 const Subheader = styled.h2`
@@ -14,6 +15,7 @@ const Subheader = styled.h2`
   font-weight:500;
   margin-top:${props => props.marginTop && props.marginTop};
   margin-bottom:${props => props.marginBottom && props.marginBottom};
+  text-align:${props => props.centered && props.centered};
 `;
 
 const DescriptionContainer = styled.div`
@@ -50,11 +52,42 @@ const SupportDescription = styled.p`
   margin-top:${props => props.marginTop && props.marginTop};
 `;
 
+const ProcessingContainer = styled.div`
+  min-width:300px;
+  min-height:80px;
+  /* background-color:yellow; */
+  grid-template-columns: 50% 50%;
+  display: grid;
+  align-items:center;
+  text-align:center;
+  padding:10px;
+  @media (max-width: 414px) {
+    grid-template-columns: 100%;
+  }
+`
+const ProcessingContainerHalf = styled.div`
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  /* background-color:blue; */
+`
+const ProcessingImageContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-width:100%;
+  min-height:80px;
+  /* background-color:yellow; */
+`
+
 const HR = styled.hr`
   border-top: 2px solid black;
 `;
 
-function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support, precision, marginTop, iconIsLarger }) {
+function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support, precision, marginTop, iconIsLarger, processing }) {
 
   return (
     <section class="section">
@@ -90,9 +123,9 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
             </DescriptionContent>
           </DescriptionContainer>
         )) }
-        <HR />
-        { solution.map((item) => (
+        { solution && solution.map((item) => (
           <>
+          <HR />
             <Header class="title">{ item.header }</Header>
             <Subheader class="subtitle" marginBottom="50px">
               { item.subheader }
@@ -110,6 +143,26 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
           </>
         )) }
         <HR />
+        {processing && (
+          <>
+            <Header class="title" marginBottom="50px">{ processing.header }</Header>
+            <ProcessingContainer>
+              {
+                processing.features.map((item) => (
+                  <ProcessingContainerHalf>
+                    <Subheader class="subtitle" centered="center" marginBottom="10px">
+                      { item.title }
+                    </Subheader>
+                    {item.desc}
+                  </ProcessingContainerHalf>
+                ))
+              }
+            </ProcessingContainer>
+            <ProcessingImageContainer>
+              <img src={processing.img}/>
+            </ProcessingImageContainer>
+          </>
+        )}
         { precision && (
           <>
             <Header class="title" marginTop="50px">{ precision.header }</Header>

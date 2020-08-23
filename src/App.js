@@ -12,6 +12,7 @@ import Blogs from "./pages/Blogs";
 import { Route, Switch } from "react-router-dom";
 import SoberEyePage from "./pages/SoberEyePage";
 import MeglabPage from './pages/MeglabPage'
+import AIanalytics from './pages/AIanalytics'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/precision-selective-digging" component={ HPShovel } />
         <Route exact path="/meglab" component={ MeglabPage } />
         <Route exact path="/sober-eye" component={ SoberEyePage } />
+        <Route exact path="/aianalytics" component={ AIanalytics } />
         <Route exact path="/blogs" component={ Blogs } />
         <Route exact path="/blogs/:slug" component={ SingleBlog } />
         <Route exact component={ Error } />
