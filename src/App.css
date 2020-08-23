@@ -390,10 +390,10 @@ a {
 }
 
 .sober-eye-section-left-desc-extra-bolded {
-  font-family: montserrat,sans-serif !important;
+  font-family: montserrat, sans-serif !important;
   margin-top: 30px;
   font-size: 30px;
-  color: #242C48;
+  color: #242c48;
   font-weight: 700;
   display: flex;
   max-width: 700px;
@@ -401,23 +401,22 @@ a {
 }
 
 .sober-eye-section-left-desc-extra-thin {
-  font-family: montserrat,sans-serif !important;
+  font-family: montserrat, sans-serif !important;
   font-style: italic;
   display: flex;
   text-align: start;
 }
 
 .sober-eye-section-left-desc-extra-moto {
-  font-family: montserrat,sans-serif !important;
-  font-size:30px;
-  color: #178A5A;
+  font-family: montserrat, sans-serif !important;
+  font-size: 30px;
+  color: #178a5a;
   margin-top: 60px;
   display: inline-block;
-
 }
 
 .sober-eye-paragraph {
-  font-family: montserrat,sans-serif !important;
+  font-family: montserrat, sans-serif !important;
   width: 486px;
   font-size: 20px;
   font-weight: 400;
@@ -432,12 +431,107 @@ a {
   flex-direction: column;
   width: 100%;
   min-height: 300px;
-  padding:100px;
+  padding: 100px;
 }
 
 .sobereye-video-container h1 {
   font-size: 40px;
   margin-bottom: 60px;
+}
+
+.meglab-header-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100wh;
+  height: 100vh;
+  background-color: #178a5a;
+  background-image: url('./images/meglab-header-imagine.jpg');
+}
+
+.meglab-logo {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+
+.meglab-logo-imagine-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 441px;
+  max-height: 75px;
+  margin-bottom: 200px;
+  /* background-color: #178a5a; */
+}
+
+.meglab-logo-imagine-container img {
+  width: 100%;
+}
+
+.meglab-our-solution {
+  min-height: 100vh;
+  min-width: 100wh;
+  background-color: #051c28;
+  grid-template-columns: 40% 60%;
+  display: grid;
+}
+
+.meglab-our-solution-left {
+  background-image: url('./images/meglab-solution-image.jpg');
+}
+
+.meglab-our-solution-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #051c28;
+}
+
+.meglab-our-solution-right-inner-wrapper {
+  width: 80%;
+  min-height: 80%;
+  /* background-color: #a8a4a4; */
+}
+
+.meglab-our-solution-right-inner-wrapper h3 {
+  color: #fcc64f !important;
+}
+
+.meglab-our-solution-right-imagine {
+  font-size: 56px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.meglab-our-solution-right p {
+  font-size: 16px;
+  color: #fff4e6;
+  display: block;
+  margin-top: 15px;
+}
+
+.meglab-merit-container {
+  margin-top: 20px;
+  min-height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: #178a5a; */
+}
+
+.meglab-merit-container li {
+  margin-bottom: 10px;
+}
+
+.meglab-merit-container li p {
+  color: #fff;
+}
+
+.meglab-merit-container li h3 {
+  color: #fcc64f !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -453,6 +547,11 @@ a {
   .hero-title {
     margin-top: 40px;
   }
+}
+
+iframe, object, embed {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media screen and (max-width: 375px) {
@@ -538,7 +637,7 @@ a {
   }
 
   .sober-eye-section-left-desc-extra-bolded {
-    font-size:20px;
+    font-size: 20px;
   }
 
   .sober-eye-section-left-desc-extra-thin {
@@ -551,5 +650,10 @@ a {
 
   .sober-eye-paragraph {
     font-size: 14px;
+  }
+
+  .meglab-our-solution {
+    grid-template-columns: 100%;
+    display: grid;
   }
 }

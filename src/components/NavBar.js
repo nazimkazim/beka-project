@@ -36,12 +36,12 @@ export default class NavBar extends Component {
                 <Navbar.Dropdown>
                   <Navbar.Item href="#">
                     <Link to="/precision-position">
-                      Система предотвращения столкновения
+                      Система предотвращения столкновения - RIGIDROBOTICS
                     </Link>
                   </Navbar.Item>
                   <Navbar.Item href="#">
                     <Link to="/sober-eye">
-                      Система мониторинга персонала
+                      Система мониторинга персонала - SOBEREYE
                     </Link>
                   </Navbar.Item>
                 </Navbar.Dropdown>
