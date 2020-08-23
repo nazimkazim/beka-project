@@ -20,7 +20,8 @@ export default function MeglabPage() {
         title: 'РАЗВИВАЮЩАЯСЯ',
         desc: 'Наша команда инженеров постоянно работает над разработкой продукции, чтобы поддерживать ее в актуальном состоянии и удовлетворять меняющиеся потребности отрасли. IMAGINE - это вовлекающая система, постоянно развивающаяся, чтобы идти в ногу с развитием технологий.'
       }
-    ]
+    ],
+    advantages: ['ПОВЫШАЕТ БЕЗОПАСНОСТЬ РАБОТНИКОВ', 'ПОВЫШАЕТ ПРОИЗВОДИТЕЛЬНОСТЬ', 'СНИЖАЕТ РАСХОДЫ НА ЭЛЕКТРОЭНЕРГИЮ', 'УМЕНЬШАЕТ ЭКОЛОГИЧЕСКИЙ СЛЕД']
   };
   return (
     <>
@@ -43,14 +44,26 @@ export default function MeglabPage() {
               ))
             }
             <ul className="meglab-merit-container">
-            {data.merits.map((item) => (
+              { data.merits.map((item) => (
                 <li>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
+                  <h3>{ item.title }</h3>
+                  <p>{ item.desc }</p>
                 </li>
-            ))}
+              )) }
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="meglab-advantages">
+        <h3>ПРЕИУМЩЕСТВА</h3>
+        <div className="meglab-advantages-items-container">
+          { data.advantages.map((item, index) => (
+            <div className="meglab-advantages-items-container-item">
+              <span>{ index + 1 }</span>
+              <p>{ item }</p>
+        
+            </div>
+          )) }
         </div>
       </div>
     </>
