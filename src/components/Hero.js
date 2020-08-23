@@ -8,15 +8,17 @@ import mainSlider2 from '../images/main-slider-2.jpg';
 import soberEyeBack from '../images/sobe-eye-back.webp';
 import soberEyeLogo from '../images/sober-eye-logo.jpg';
 import rigidRoboticsLogo from '../images/rigidlogo-rgb.png';
+import aibackground from '../images/AIbackground.jpg';
+import highprecisionbc from '../images/highprecisionbc.jpg'
 
 export default class SimpleSlider extends Component {
     render() {
         const settings = {
             dots: true,
-            infinite: true,
+            infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             speed: 2000,
             autoplaySpeed: 2000,
             cssEase: "linear"
@@ -26,30 +28,40 @@ export default class SimpleSlider extends Component {
                 link: 'Система предотвращения столкновений',
                 to: 'prevent-collision',
                 title: 'Высокоточное решение для предотвращения столкновений.',
-                desc: 'Активация «Точности безопасности», потому что ложные тревоги убивают.',
+                desc: 'Активация «Точности безопасности», потому что ложные тревоги убивают',
                 img: mainSlider1,
-                logo: rigidRoboticsLogo
-            },
-            {
-                link: 'Высокоточное позиционирование ковша и геометрия рукояти',
-                to: 'precision-position',
-                title: 'Режим «Точной или выборочной экскавации»',
-                desc: 'Точная или выборочная выемка руды позволяет точно знать, где копает ковш. Таким образом, рудник может планировать выборочную выемку руды с разным содержанием руды на разной высоте уступа.',
-                img: mainSlider2,
                 logo: rigidRoboticsLogo
             },
             {
                 to: 'sober-eye',
                 title: 'Снижение количества несчастных случаев на рабочем месте с инновационным решением по безопасности.',
-                desc: 'Оценить риск нарушения состояния усталости, алкоголь и наркотики на рабочем места, когда это наиболее важно.',
+                desc: 'Оценить риск нарушения состояния усталости, алкоголь и наркотики на рабочем места, когда это наиболее важно',
                 img: soberEyeBack,
                 logo: soberEyeLogo
             },
             {
-                link: 'Технологические услуги',
+                link: 'Высокоточное позиционирование, направление и 3D-ориентация',
+                to: 'precision-position',
+                title: 'Режим «Точной добычи»',
+                desc: 'Сегодняшние горнодобывающие предприятия рассматривают высокоточное позиционирование как эффективную инфраструктуру всего парка',
+                img: highprecisionbc,
+                logo: rigidRoboticsLogo
+            },
+            {
+                link: 'Высокоточное позиционирование ковша и геометрия рукояти',
+                to: 'precision-selective-digging',
+                title: 'Режим «Точной или выборочной экскавации»',
+                desc: 'Точная или выборочная выемка руды позволяет точно знать, где копает ковш',
+                img: mainSlider2,
+                logo: rigidRoboticsLogo
+            },
+            {
+                link: 'Продвинутая аналитика и использование Искуственного Интелекта в горном деле',
                 to: 'sevices',
-                title: 'Специально для горнодобывающей промышленности',
-                desc: 'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы.',
+                title: 'Новоя эра принятия решений на основе Искуственного Интелекта',
+                desc: 'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы',
+                img:aibackground,
+                logo: rigidRoboticsLogo
             }
 
 

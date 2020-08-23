@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Section = styled.section`
   background-image:${props => `url(${props.background})`};
   background-size: cover;
+  background-position: center;
 `
 const Title = styled.h1`
   background-color:#dcd056;

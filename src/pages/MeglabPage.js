@@ -105,7 +105,7 @@ export default function MeglabPage() {
         </div>
       </div>
       <div className="meglab-advantages">
-        <h3>ПРЕИУМЩЕСТВА</h3>
+        <h3>ПРЕИМУЩЕСТВА</h3>
         <div className="meglab-advantages-items-container">
           { data.advantages.map((item, index) => (
             <div className="meglab-advantages-items-container-item">

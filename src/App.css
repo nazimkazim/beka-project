@@ -764,4 +764,25 @@ iframe, object, embed {
   .sobereye-video-container {
     padding: 0;
   }
+
+  .sober-eye-logo {
+    width: 150px;
+  }
+
+  .hero-left-desc-h1-link a {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .hero-left-desc-h1-link {
+    line-height: .7;
+  }
+
+  .hero-left-desc-title {
+  font-size: 16px;
+  }
+
+  .hero-left-desc-desc {
+    font-size: 14px;
+  }
 }

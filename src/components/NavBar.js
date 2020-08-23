@@ -35,8 +35,13 @@ export default class NavBar extends Component {
               </Navbar.Link>
                 <Navbar.Dropdown>
                   <Navbar.Item href="#">
-                    <Link to="/precision-position">
+                    <Link to="/prevent-collision">
                       Система предотвращения столкновения - RIGIDROBOTICS
+                    </Link>
+                  </Navbar.Item>
+                  <Navbar.Item href="#">
+                  <Link to="/precision-position">
+                      Высокоточное позиционирование, направление и 3D ориентация - RIGIDROBOTICS
                     </Link>
                   </Navbar.Item>
                   <Navbar.Item href="#">
