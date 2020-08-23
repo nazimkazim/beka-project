@@ -155,8 +155,8 @@ export default function SoberEyePage() {
           
         </div>
       )) }
-      <VideoComponent src="https://www.youtube.com/embed/lBZWPNiXuk0" header="Как работает SOBEREYE"/>
-      <VideoComponent src="https://www.youtube.com/embed/Z7bTlHdkSMs" header="SOBEREYE - безопасное рабочее место"/>
+      <VideoComponent src="https://www.youtube.com/embed/lBZWPNiXuk0" uniqueTitle="title1" header="Как работает SOBEREYE"/>
+      <VideoComponent src="https://www.youtube.com/embed/Z7bTlHdkSMs" uniqueTitle="title2" header="SOBEREYE - безопасное рабочее место"/>
     </>
 
   );

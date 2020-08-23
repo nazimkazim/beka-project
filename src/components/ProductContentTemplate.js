@@ -70,6 +70,7 @@ const ProcessingContainerHalf = styled.div`
   height:100%;
   display:flex;
   align-items:center;
+  font-size:18px;
   justify-content:center;
   flex-direction:column;
   /* background-color:blue; */
@@ -159,8 +160,9 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
               }
             </ProcessingContainer>
             <ProcessingImageContainer>
-              <img src={processing.img}/>
+              <img src={processing.img} alt=""/>
             </ProcessingImageContainer>
+            <HR />
           </>
         )}
         { precision && (

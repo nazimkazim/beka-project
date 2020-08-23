@@ -83,7 +83,7 @@ export default class SimpleSlider extends Component {
                                 <div className="columns">
                                     <div className="column hero-left-column">
                                         <div className="hero-left-desc">
-                                            { item.logo && <img src={ item.logo } className="sober-eye-logo" /> }
+                                            { item.logo && <img src={ item.logo } className="sober-eye-logo" alt="" /> }
                                             <Fade>
                                                 <h1 className="hero-left-desc-h1-link">{ item.to && <Link to={ item.to }>{ item.link }</Link> }</h1>
                                             </Fade>

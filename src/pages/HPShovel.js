@@ -5,7 +5,6 @@ import ProductContentTemplate from '../components/ProductContentTemplate';
 import bucketpositioning300x300 from '../images/bucketpositioning300x300.png';
 import iconFeatures from '../images/RR_icon_feature.png';
 import modules from '../images/modules.png';
-import precisionImage from '../images/precison.png'
 import universalSupport from '../images/universalSupport.png';
 
 function PrecisionPositionComp() {

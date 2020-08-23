@@ -87,7 +87,7 @@ export default function MeglabPage() {
           <div className="meglab-our-solution-right-inner-wrapper">
             <h3>РЕШЕНИЕ ДЛЯ ПОДЗЕМНЫХ ГОРНЫХ РАБОТ</h3>
             <span className="meglab-our-solution-right-imagine">IMAGINE</span>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4MUeD_oJRjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4MUeD_oJRjY" title="title3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             {
               data.paragraphs.map((paragraph) => (
                 <p>{ paragraph }</p>
@@ -120,7 +120,7 @@ export default function MeglabPage() {
           <CardRow data={ data.functions } class="why-us" />
         </div>
         <div className="meglab-functions-right">
-          <img src={ bgSideImg } />
+          <img src={ bgSideImg } alt="" />
         </div>
       </div>
     </>
