@@ -44,6 +44,11 @@ export default class NavBar extends Component {
                       Система мониторинга персонала - SOBEREYE
                     </Link>
                   </Navbar.Item>
+                  <Navbar.Item href="#">
+                    <Link to="/meglab">
+                      Оптимизация и безопасность подземных горных работ - IMAGINE
+                    </Link>
+                  </Navbar.Item>
                 </Navbar.Dropdown>
               </Navbar.Item>
               <Navbar.Item>

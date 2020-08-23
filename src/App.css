@@ -278,7 +278,7 @@ a {
 }
 
 .why-us-container .content img {
-  width: 50px;
+  width: 80px;
 }
 
 .why-us-container .why-us-card {
@@ -325,6 +325,10 @@ a {
   color: #fff;
   text-align: center;
   font-size: 1.1em;
+}
+
+.why-us-container .why-us-card .face.face2 .content p {
+  font-size: .8em;
 }
 
 .why-us-container .why-us-card .face.face2 {
@@ -598,7 +602,7 @@ a {
 .meglab-functions {
   display: grid;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-columns: 60% 40%;
 }
 
@@ -696,6 +700,10 @@ iframe, object, embed {
   }
 
   .sober-eye-section {
+    grid-template-columns: 100%;
+  }
+
+  .meglab-functions {
     grid-template-columns: 100%;
   }
 
