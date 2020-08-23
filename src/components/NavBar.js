@@ -54,16 +54,17 @@ export default class NavBar extends Component {
                       Оптимизация и безопасность подземных горных работ - IMAGINE
                     </Link>
                   </Navbar.Item>
+                  <Navbar.Item href="#">
+                    <Link to="/aianalytics">
+                      Продвинутая аналитика и искуственный интеллект в горном деле - RIGIDROBOTICS
+                    </Link>
+                  </Navbar.Item>
+                  <Navbar.Item href="#">
+                    <Link to="/precision-selective-digging">
+                      Высокоточное позиционирование ковша и геометрия рукояти - RIGIDROBOTICS
+                    </Link>
+                  </Navbar.Item>
                 </Navbar.Dropdown>
-              </Navbar.Item>
-              <Navbar.Item>
-                <Link to="/sevice">Услуги</Link>
-              </Navbar.Item>
-              <Navbar.Item>
-                <Link to="/me">О нас</Link>
-              </Navbar.Item>
-              <Navbar.Item>
-                <Link to="/blogs">Новости</Link>
               </Navbar.Item>
             </Navbar.Container>
           </Navbar.Menu>
