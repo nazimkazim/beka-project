@@ -629,6 +629,21 @@ iframe, object, embed {
   max-height: 100%;
 }
 
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+  height: calc(100vh - 52px);
+  /*background-color: firebrick; */
+}
+
+.error-page p {
+  font-size: 30px;
+}
+
+
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 300px;

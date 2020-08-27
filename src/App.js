@@ -27,9 +27,9 @@ function App() {
         <Route exact path="/meglab" component={ MeglabPage } />
         <Route exact path="/sober-eye" component={ SoberEyePage } />
         <Route exact path="/aianalytics" component={ AIanalytics } />
+        <Route exact component={ Error } />
         <Route exact path="/blogs" component={ Blogs } />
         <Route exact path="/blogs/:slug" component={ SingleBlog } />
-        <Route exact component={ Error } />
       </Switch>
       <Footer />
     </>
