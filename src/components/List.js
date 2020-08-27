@@ -3,14 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     maxWidth: 360,
     color:'white'
-  },
+  }
 }));
 
 export default function InsetList(props) {
@@ -23,7 +22,9 @@ export default function InsetList(props) {
           <ListItemIcon>
           {item.icon}
           </ListItemIcon>
-          <ListItemText primary={ item.text } />
+          {item.email && <a href={`mailto:${item.text}`}>{item.text}</a>}
+          {item.phone && <a href={`tel:${item.text}`}>{item.text}</a>}
+          {item.default && <a>{item.text}</a>}
         </ListItem>
       )) }
 

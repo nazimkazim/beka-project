@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import List from './List'
+import List from './List';
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 import LocationOnRoundedIcon from '@material-ui/icons/LocationOnRounded';
 import PhoneEnabledRoundedIcon from '@material-ui/icons/PhoneEnabledRounded';
@@ -10,17 +10,17 @@ export default class Footer extends Component {
     items: [
       {
         news: [
-          { text:"Как мы создаем свой продукт.", icon:<ArrowForwardIosRoundedIcon/> },
-          { text:"В Июле мы запускаем наш первый продукт для Казахстана.",icon:<ArrowForwardIosRoundedIcon/> },
-          {text:"Почему важно успеть купить наш товар.",icon:<ArrowForwardIosRoundedIcon/>}
+          { text: "Как мы создаем свой продукт.", icon: <ArrowForwardIosRoundedIcon />, default:true },
+          { text: "В Июле мы запускаем наш первый продукт для Казахстана.", icon: <ArrowForwardIosRoundedIcon />, default:true },
+          { text: "Почему важно успеть купить наш товар.", icon: <ArrowForwardIosRoundedIcon />, default:true }
         ]
       },
       {
         contacts: [
-          { text: "РК, г. Алматы, Ауэзовский район, 050062, мкр. 4, дом 14", icon: <LocationOnRoundedIcon/> },
-          { text: "+7 701 037 8388", icon: <PhoneEnabledRoundedIcon/> },
-          { text: "ilyas.bekkuliyev@uvision.kz", icon: <EmailRoundedIcon/> },
-          { text: "sales@uvision.kz", icon: <EmailRoundedIcon/> }
+          { text: "РК, г. Алматы, Ауэзовский район, 050062, мкр. 4, дом 14", icon: <LocationOnRoundedIcon />, default:true },
+          { text: "+7 701 037 8388", icon: <PhoneEnabledRoundedIcon />, phone: true },
+          { text: "ilyas.bekkuliyev@uvision.kz", icon: <EmailRoundedIcon />, email: true },
+          { text: "sales@uvision.kz", icon: <EmailRoundedIcon />, email: true }
         ]
       }
     ]
@@ -33,11 +33,11 @@ export default class Footer extends Component {
           <div className="columns">
             <div className="column is-6">
               <h3 className="has-text-light has-text-left">Последние новости</h3>
-                <List data={this.state.items[0].news} />
+              <List data={ this.state.items[0].news } />
             </div>
             <div className="column is-6">
               <h3 className="has-text-light has-text-left">Контакты</h3>
-              <List data={this.state.items[1].contacts} />
+              <List data={ this.state.items[1].contacts } />
             </div>
           </div>
         </div>

@@ -643,6 +643,10 @@ iframe, object, embed {
   font-size: 30px;
 }
 
+.MuiButtonBase-root a {
+  color: white;
+}
+
 
 @media screen and (max-width: 768px) {
   .hero {
