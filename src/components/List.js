@@ -24,7 +24,7 @@ export default function InsetList(props) {
           </ListItemIcon>
           {item.email && <a href={`mailto:${item.text}`}>{item.text}</a>}
           {item.phone && <a href={`tel:${item.text}`}>{item.text}</a>}
-          {item.default && <a href="#">{item.text}</a>}
+          {item.default && <a href={`address:${item.text}`}>{item.text}</a>}
         </ListItem>
       )) }
 
