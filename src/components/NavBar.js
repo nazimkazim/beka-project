@@ -40,7 +40,7 @@ export default class NavBar extends Component {
                     </Link>
                   </Navbar.Item>
                   <Navbar.Item href="#">
-                  <Link to="/precision-position">
+                    <Link to="/precision-position">
                       Высокоточное позиционирование, направление и 3D ориентация - RIGIDROBOTICS
                     </Link>
                   </Navbar.Item>
@@ -65,6 +65,9 @@ export default class NavBar extends Component {
                     </Link>
                   </Navbar.Item>
                 </Navbar.Dropdown>
+              </Navbar.Item>
+              <Navbar.Item>
+                <Link to="/services">Услуги</Link>
               </Navbar.Item>
             </Navbar.Container>
           </Navbar.Menu>

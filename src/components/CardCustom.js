@@ -30,6 +30,7 @@ export default function CustomCard(props) {
     width: 200px;
     height: 200px;
     margin: 20px;
+    object-fit:contain;
     position: relative;
     z-index: 1;
 
