@@ -1,5 +1,5 @@
 import React from 'react';
-import { VscChevronRight, VscCircleFilled } from "react-icons/vsc";
+import {VscCircleFilled } from "react-icons/vsc";
 
 
 export default function Services() {
