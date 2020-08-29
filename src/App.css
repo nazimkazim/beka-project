@@ -647,6 +647,78 @@ iframe, object, embed {
   color: white;
 }
 
+.services-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 52px);
+  width: 100wh;
+  background-color: #051C28;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-col-left {
+  height: 100%;
+  background-color: #cccccc;
+  background-image: url('../src/images/service-bck.jpg');
+  background-size: cover;
+}
+
+.services-col-right {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+}
+
+.services-col-right h2 {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services-col-right h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.services-col-right p {
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+}
+
+.ul1-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: auto;
+  /* background-color: #fcc64f; */
+  padding: 20px;
+}
+
+.ul1-service {
+  color: white;
+}
+
+.ul1-service li {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 3px;
+  /* background-color: #333; */
+  margin-bottom: 3px;
+}
+
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -803,5 +875,13 @@ iframe, object, embed {
 
   .hero-left-desc-desc {
     font-size: 14px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-col-right {
+    padding: 3px;
   }
 }
