@@ -296,7 +296,7 @@ a {
 
 .why-us-container .why-us-card .face.face1 {
   position: relative;
-  background: #041F22;
+  background:#2e3836;
   display: flex;
   padding: 20px;
   justify-content: center;
@@ -360,7 +360,7 @@ a {
 .sober-eye-section-half {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
   text-align: center;
 }

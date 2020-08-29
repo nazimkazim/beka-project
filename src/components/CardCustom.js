@@ -10,7 +10,7 @@ export default function CustomCard(props) {
     margin: 40px auto;
     background-color: #F7F7E9;
     border-radius:10px;
-    color: #444;
+    color: #f4f6f5;
     overflow: hidden;
     box-shadow: 5px 5px 0 0 #aaa;
   `
@@ -22,7 +22,7 @@ export default function CustomCard(props) {
     font-size:24px;
     font-family: Roboto Slab;
     font-weight: 700;
-    background-color: #A4A0A3;
+    background-color: #2e3836;
   `
 
   const Image = styled.img`
@@ -46,6 +46,7 @@ export default function CustomCard(props) {
     position: relative;
     margin: 20px;
     font-size:16px;
+    color:#1c221f;
     font-family: Merriweather Sans;
   `
   return (

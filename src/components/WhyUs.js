@@ -1,9 +1,9 @@
 import React from 'react'
-import rightPeople from '../images/right-people.png'
-import miningIcon from '../images/mining-icon.png'
-import profileEducation from '../images/profile-education.png'
-import tracking from '../images/tracking.png'
-import selection from '../images/selection.png'
+import rightPeople from '../images/whyusicons/support.png';
+import miningIcon from '../images/whyusicons/experience.png';
+import profileEducation from '../images/whyusicons/education.png'
+import tracking from '../images/whyusicons/performance.png'
+import selection from '../images/whyusicons/solutions.png'
 import CardRow from './Card/CardRow'
 
 function WhyUs() {

@@ -10,13 +10,13 @@ export default function SoberEyePage() {
   const data = {
     soberSectionsArr: [
       {
-        header: 'SOBEREYE это услуга на основе подписки, включающая',
+        header: 'SOBEREYE - это услуга на основе подписки, включающая',
         list: [
           'Тестирующие устройства', 'Облачное програмное обеспечеение', 'Поддержка и обучение'
         ],
         image: SoberEyeTarget,
         extraInfo: {
-          bolded: 'Инновационное решение для обеспечения безопасности на рабочем месте, которое спасает жизни и экономит ваши деньги с точностью 99,9%',
+          bolded: 'Инновационное решение для обеспечения безопасности на рабочем месте, которое спасает жизни и экономит ваши деньги с точностью 99,99%',
           subtitle: 'Спроектирован так, чтобы обеспечивать менее одного из тысячи ложных срабатываний.',
           moto: 'Более безопасное рабочее место в мгновение ока'
 
@@ -117,6 +117,13 @@ export default function SoberEyePage() {
               <>
                 <div className="sober-eye-section-half">
                   <div className="sober-eye-section-left-desc-container">
+                  { item.extraInfo && (
+                      <>
+                        <span className="sober-eye-section-left-desc-extra-bolded">{ item.extraInfo.bolded }</span>
+                        <span className="sober-eye-section-left-desc-extra-thin">{ item.extraInfo.subtitle }</span>
+                        <span className="sober-eye-section-left-desc-extra-moto">{ item.extraInfo.moto }</span>
+                      </>
+                    ) }
                     <span className="sober-eye-section-left-desc-header">
                       { item.header }
                     </span>
@@ -138,13 +145,6 @@ export default function SoberEyePage() {
                       ))
                     )
                     }
-                    { item.extraInfo && (
-                      <>
-                        <span className="sober-eye-section-left-desc-extra-bolded">{ item.extraInfo.bolded }</span>
-                        <span className="sober-eye-section-left-desc-extra-thin">{ item.extraInfo.subtitle }</span>
-                        <span className="sober-eye-section-left-desc-extra-moto">{ item.extraInfo.moto }</span>
-                      </>
-                    ) }
                   </div>
                 </div>
                 <div className="sober-eye-section-half">
