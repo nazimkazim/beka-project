@@ -4,6 +4,7 @@ import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounde
 import LocationOnRoundedIcon from '@material-ui/icons/LocationOnRounded';
 import PhoneEnabledRoundedIcon from '@material-ui/icons/PhoneEnabledRounded';
 import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
+import Form from './Form'
 
 export default class Footer extends Component {
   state = {
@@ -31,11 +32,15 @@ export default class Footer extends Component {
       <footer className="footer has-background-black-bis">
         <div className="content">
           <div className="columns">
-            <div className="column is-6">
+            <div className="column is-4">
               <h3 className="has-text-light has-text-left">Последние новости</h3>
               <List data={ this.state.items[0].news } />
             </div>
-            <div className="column is-6">
+            <div className="column is-4">
+              <h3 className="has-text-light has-text-left">Оставьте контакты</h3>
+              <Form/>
+            </div>
+            <div className="column is-4">
               <h3 className="has-text-light has-text-left">Контакты</h3>
               <List data={ this.state.items[1].contacts } />
             </div>
