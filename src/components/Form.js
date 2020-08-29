@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Form() {
   return (
-    <form action="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
       <div class="field">
         <p class="control has-icons-left">
           <input class="input" type="text" name="name" placeholder="Имя" />
@@ -31,7 +31,7 @@ export default function Form() {
         </p>
       </div>
       <div className="field">
-        <div data-netlify-recaptch="true"></div>
+        <div data-netlify-recaptcha="true"></div>
       </div>
       <button className="button is-success" type="submit">Отправить</button>
     </form>
