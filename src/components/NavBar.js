@@ -40,11 +40,6 @@ export default class NavBar extends Component {
                     </Link>
                   </Navbar.Item>
                   <Navbar.Item href="#">
-                    <Link to="/precision-position">
-                      Высокоточное позиционирование, направление и 3D ориентация - RIGIDROBOTICS
-                    </Link>
-                  </Navbar.Item>
-                  <Navbar.Item href="#">
                     <Link to="/sober-eye">
                       Система мониторинга персонала - SOBEREYE
                     </Link>
@@ -62,6 +57,11 @@ export default class NavBar extends Component {
                   <Navbar.Item href="#">
                     <Link to="/precision-selective-digging">
                       Высокоточное позиционирование ковша и геометрия рукояти - RIGIDROBOTICS
+                    </Link>
+                  </Navbar.Item>
+                  <Navbar.Item href="#">
+                    <Link to="/precision-position">
+                      Высокоточное позиционирование, направление и 3D ориентация - RIGIDROBOTICS
                     </Link>
                   </Navbar.Item>
                 </Navbar.Dropdown>
