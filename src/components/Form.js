@@ -3,7 +3,7 @@ import React from 'react';
 export default function Form() {
   
   return (
-    <form action="POST" data-netlify="true">
+    <form method="POST" data-netlify="true">
       <div class="field">
         <p class="control has-icons-left">
           <input class="input" type="text" name="name" placeholder="Имя" />
