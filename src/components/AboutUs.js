@@ -6,6 +6,7 @@ import esentai from '../images/esentai.jpeg';
 import baglanUtegen from '../images/bagaUtigen.jpeg';
 import erkinK from '../images/erkin-k.png';
 import CardCustom from './CardCustom';
+import { Helmet } from "react-helmet";
 
 function AboutUs() {
   const people = [
@@ -49,6 +50,10 @@ function AboutUs() {
   ];
   return (
     <section className="section about-us-section">
+      <Helmet>
+        <title>My Title</title>
+        <meta name="о компании" content="компания uvision предлагает широкий спектр в области безопасности горного дела" />
+    </Helmet>
       <div className="container">
         <h1 className="title has-text-white-ter has-text-primary-light mt-4">uVision Safety Solutions</h1>
         <p className="content is-large mt-4 has-text-grey-lighter is-size-6-mobile">
