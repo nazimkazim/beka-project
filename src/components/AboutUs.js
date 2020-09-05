@@ -53,6 +53,7 @@ function AboutUs() {
       <Helmet>
         <title>My Title</title>
         <meta name="о компании" content="компания uvision предлагает широкий спектр в области безопасности горного дела" />
+        <link rel="canonical" href="http://uvision.kz" />
     </Helmet>
       <div className="container">
         <h1 className="title has-text-white-ter has-text-primary-light mt-4">uVision Safety Solutions</h1>

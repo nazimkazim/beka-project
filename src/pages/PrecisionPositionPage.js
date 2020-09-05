@@ -11,6 +11,7 @@ import highprecisionbc from '../images/highprecisionbc.jpg'
 function PrecisionPositionComp() {
   const content = {
     header:'Высокоточное позиционирование, направление и 3D-ориентация',
+    url:'precision-position',
     backgroundImage:highprecisionbc,
     subheader:'Внедрение высокоточной добычи. Сегодня горнодобывающие предприятия рассматривают высокоточное позиционирование как эффективную инфраструктуру всего парка',
     descriptionContainer:{
@@ -57,7 +58,7 @@ function PrecisionPositionComp() {
   return (
     <div>
       <HeroComp background={ content.backgroundImage } title={content.header}/>
-      <ProductContentTemplate header={content.header}  subheader={content.subheader} descriptionContent={content.descriptionContainer.descriptionContent} iconHpposition={content.descriptionContainer.icon} features={content.features} solution={content.solution} support={content.support} />
+      <ProductContentTemplate url={content.url} header={content.header}  subheader={content.subheader} descriptionContent={content.descriptionContainer.descriptionContent} iconHpposition={content.descriptionContainer.icon} features={content.features} solution={content.solution} support={content.support} />
     </div>
   );
 }

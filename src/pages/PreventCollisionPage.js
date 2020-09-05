@@ -11,6 +11,7 @@ import universalSupport from '../images/universalSupport.png';
 function PrecisionPositionComp() {
   const content = {
     header: 'Система предотвращения столкновений RIGIDROBOTICS',
+    url:'prevent-collision',
     backgroundImage: mainSlider1,
     subheader: 'Высокоточное решение для предотвращения столкновений. Активация «Точности безопасности», потому что ложные тревоги убивают.',
     descriptionContainer: {
@@ -58,7 +59,7 @@ function PrecisionPositionComp() {
 return (
   <div>
     <HeroComp background={ content.backgroundImage } title={ content.header } />
-    <ProductContentTemplate header={ content.header } subheader={ content.subheader } descriptionContent={ content.descriptionContainer.descriptionContent } iconHpposition={ content.descriptionContainer.icon } features={ content.features } solution={ content.solution } support={ content.support } precision={content.precision} iconIsLarger="true" marginTop="20px" />
+    <ProductContentTemplate url={content.url} header={ content.header } subheader={ content.subheader } descriptionContent={ content.descriptionContainer.descriptionContent } iconHpposition={ content.descriptionContainer.icon } features={ content.features } solution={ content.solution } support={ content.support } precision={content.precision} iconIsLarger="true" marginTop="20px" />
   </div>
 );
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from "react-helmet";
+
 
 const Header = styled.h1`
   font-family:Roboto;
@@ -64,7 +66,7 @@ const ProcessingContainer = styled.div`
   @media (max-width: 414px) {
     grid-template-columns: 100%;
   }
-`
+`;
 const ProcessingContainerHalf = styled.div`
   width:100%;
   height:100%;
@@ -74,7 +76,7 @@ const ProcessingContainerHalf = styled.div`
   justify-content:center;
   flex-direction:column;
   /* background-color:blue; */
-`
+`;
 const ProcessingImageContainer = styled.div`
   display:flex;
   justify-content:center;
@@ -82,16 +84,21 @@ const ProcessingImageContainer = styled.div`
   min-width:100%;
   min-height:80px;
   /* background-color:yellow; */
-`
+`;
 
 const HR = styled.hr`
   border-top: 2px solid black;
 `;
 
-function ProductContentTemplate({ header, subheader, descriptionContent, iconHpposition, features, solution, support, precision, marginTop, iconIsLarger, processing }) {
+function ProductContentTemplate({ url, header, subheader, descriptionContent, iconHpposition, features, solution, support, precision, marginTop, iconIsLarger, processing }) {
 
   return (
     <section class="section">
+      <Helmet>
+        <meta charSet="utf-8" name="description" content={descriptionContent} />
+        <title>{header}</title>
+        <link rel="canonical" href={`http://www.uvision.kz/${url}`} />
+      </Helmet>
       <div class="container">
         <Header class="title">{ header }</Header>
         <Subheader class="subtitle" marginTop="80px">
@@ -126,7 +133,7 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
         )) }
         { solution && solution.map((item) => (
           <>
-          <HR />
+            <HR />
             <Header class="title">{ item.header }</Header>
             <Subheader class="subtitle" marginBottom="50px">
               { item.subheader }
@@ -144,7 +151,7 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
           </>
         )) }
         <HR />
-        {processing && (
+        { processing && (
           <>
             <Header class="title" marginBottom="50px">{ processing.header }</Header>
             <ProcessingContainer>
@@ -154,17 +161,17 @@ function ProductContentTemplate({ header, subheader, descriptionContent, iconHpp
                     <Subheader class="subtitle" centered="center" marginBottom="10px">
                       { item.title }
                     </Subheader>
-                    {item.desc}
+                    { item.desc }
                   </ProcessingContainerHalf>
                 ))
               }
             </ProcessingContainer>
             <ProcessingImageContainer>
-              <img src={processing.img} alt=""/>
+              <img src={ processing.img } alt="" />
             </ProcessingImageContainer>
             <HR />
           </>
-        )}
+        ) }
         { precision && (
           <>
             <Header class="title" marginTop="50px">{ precision.header }</Header>

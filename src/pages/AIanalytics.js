@@ -11,6 +11,7 @@ import aibackground from '../images/AIbackground.jpg';
 function PrecisionPositionComp() {
   const content = {
     header:'Продвинутая аналитика и искуственный интеллект в горном деле',
+    url:'aianalytics',
     backgroundImage:aibackground,
     subheader:'Внедрение новой эры принятия решений на основе искуственного интеллекта',
     descriptionContainer:{
@@ -57,7 +58,7 @@ function PrecisionPositionComp() {
   return (
     <div>
       <HeroComp background={ content.backgroundImage } title={content.header}/>
-      <ProductContentTemplate header={content.header}  subheader={content.subheader} descriptionContent={content.descriptionContainer.descriptionContent} iconHpposition={content.descriptionContainer.icon} features={content.features}  solution={content.solution} support={content.support} processing = {content.processing} />
+      <ProductContentTemplate url={content.url} header={content.header}  subheader={content.subheader} descriptionContent={content.descriptionContainer.descriptionContent} iconHpposition={content.descriptionContainer.icon} features={content.features}  solution={content.solution} support={content.support} processing = {content.processing} />
     </div>
   );
 }
