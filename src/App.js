@@ -14,7 +14,6 @@ import SoberEyePage from "./pages/SoberEyePage";
 import MeglabPage from './pages/MeglabPage';
 import AIanalytics from './pages/AIanalytics';
 import Services from './pages/Services';
-import PostSubmit from './components/PostSubmitForm'
 
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
         <Route exact path="/sober-eye" component={ SoberEyePage } />
         <Route exact path="/aianalytics" component={ AIanalytics } />
         <Route exact path="/services" component={ Services } />
-        <Route exact path="/POST" component={ PostSubmit } />
         <Route exact component={ Error } />
         <Route exact path="/blogs" component={ Blogs } />
         <Route exact path="/blogs/:slug" component={ SingleBlog } />
