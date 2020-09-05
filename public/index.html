@@ -2,8 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -16,14 +25,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Решения для оптимизации открытых и подземных горных работ, повышение безопасности персонала. Технологические услуги, техническая поддержка, аудит решений для горных работ"
     />
-    <link rel="apple-touch-icon" href="favicon-uvision.ico" />
+    <link rel="apple-touch-icon" href="favicon-uvision" />
     <meta name="yandex-verification" content="54af2aa04fcefb1e" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -39,10 +51,57 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    
+
     <title>uVision Safety Solutions</title>
   </head>
   <body>
+    <form
+      name="beka-contacts"
+      netlify
+      data-netlify-honeypot="bot-field"
+      hidden
+    >
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" type="text" name="name" placeholder="Имя" />
+          <span class="icon is-small is-left">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </span>
+        </p>
+      </div>
+      <div className="field">
+        <p className="control has-icons-left">
+          <input
+            className="input"
+            type="number"
+            name="phone"
+            placeholder="Телефон"
+          />
+          <span className="icon is-small is-left">
+            <i className="fa fa-phone" aria-hidden="true"></i>
+          </span>
+        </p>
+      </div>
+      <div className="field">
+        <p className="control has-icons-left has-icons-right">
+          <input
+            className="input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <span className="icon is-small is-left">
+            <i className="fas fa-envelope"></i>
+          </span>
+          <span className="icon is-small is-right">
+            <i className="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+      <div className="field">
+        <div data-netlify-recaptcha="true"></div>
+      </div>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

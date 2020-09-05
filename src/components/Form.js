@@ -3,10 +3,12 @@ import React from 'react';
 export default function Form() {
   
   return (
-    <form name="beka-contacts" action="/contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form name="beka-contacts" action="/contact" method="POST">
+      <input type="hidden" name="beka-contacts" value="beka-contacts"/>
+
       <div class="field">
         <p class="control has-icons-left">
-          <input class="input" type="text" name="name" placeholder="Имя" />
+          <input required class="input" type="text" name="name" placeholder="Имя" />
           <span class="icon is-small is-left">
             <i class="fa fa-user" aria-hidden="true"></i>
           </span>
@@ -14,7 +16,7 @@ export default function Form() {
       </div>
       <div className="field">
         <p className="control has-icons-left">
-          <input className="input" type="number" name="phone" placeholder="Телефон" />
+          <input required className="input" type="number" name="phone" placeholder="Телефон" />
           <span className="icon is-small is-left">
             <i className="fa fa-phone" aria-hidden="true"></i>
           </span>
@@ -22,7 +24,7 @@ export default function Form() {
       </div>
       <div className="field">
         <p className="control has-icons-left has-icons-right">
-          <input className="input" type="email" name="email" placeholder="Email" />
+          <input required className="input" type="email" name="email" placeholder="Email" />
           <span className="icon is-small is-left">
             <i className="fas fa-envelope"></i>
           </span>
