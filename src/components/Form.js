@@ -3,7 +3,7 @@ import React from 'react';
 export default function Form() {
   
   return (
-    <form method="POST" data-netlify="true">
+    <form name="beka-contacts" action="/contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
       <div class="field">
         <p class="control has-icons-left">
           <input class="input" type="text" name="name" placeholder="Имя" />
