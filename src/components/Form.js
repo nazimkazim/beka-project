@@ -3,9 +3,8 @@ import React from 'react';
 export default function Form() {
   
   return (
-    <form name="beka-contacts" action="/contact" method="POST">
+    <form name="beka-contacts" method="POST" onSubmit="submit">
       <input type="hidden" name="beka-contacts" value="beka-contacts"/>
-
       <div class="field">
         <p class="control has-icons-left">
           <input required class="input" type="text" name="name" placeholder="Имя" />
