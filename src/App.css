@@ -439,12 +439,12 @@ a {
   flex-direction: column;
   width: 100%;
   min-height: 300px;
-  padding: 100px;
+  padding: 10px;
 }
 
 .sobereye-video-container h1 {
   font-size: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .meglab-header-wrapper {

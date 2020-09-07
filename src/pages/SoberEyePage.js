@@ -80,6 +80,7 @@ export default function SoberEyePage() {
         <meta charSet="utf-8" name="description" content="Инновационное решение для обеспечения безопасности на рабочем месте, которое спасает жизни и экономит ваши деньги с точностью 99,99%" />
         <title>Sobereye</title>
       </Helmet>
+      <VideoComponent src="https://www.youtube.com/embed/lBZWPNiXuk0" uniqueTitle="title1"/>
       { data.soberSectionsArr.map((item) => (
         <div className="sober-eye-section" style={ {
           backgroundColor: item.color,
@@ -163,7 +164,7 @@ export default function SoberEyePage() {
           
         </div>
       )) }
-      <VideoComponent src="https://www.youtube.com/embed/lBZWPNiXuk0" uniqueTitle="title1" header="Как работает SOBEREYE"/>
+      
       <VideoComponent src="https://www.youtube.com/embed/Z7bTlHdkSMs" uniqueTitle="title2" header="SOBEREYE - безопасное рабочее место"/>
     </>
 
