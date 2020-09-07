@@ -21,7 +21,7 @@ function App() {
     <>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={ Home } />
+        <Route exact path="/" component={ Home }  />
         <Route exact path="/precision-position" component={ PrecisionPositionPage } />
         <Route exact path="/prevent-collision" component={ PreventCollisionPage } />
         <Route exact path="/precision-selective-digging" component={ HPShovel } />

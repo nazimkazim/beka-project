@@ -5,8 +5,12 @@ import SoberEyeTarget from '../images/sober-eye-target.PNG';
 import SoberEyeSupport from '../images/sober-eye-support.PNG';
 import SoberEyeEye from '../images/sober-eye-eye.PNG';
 import VideoComponent from '../components/videoComponent'
-export default function SoberEyePage() {
+import { Helmet } from "react-helmet";
 
+
+
+
+export default function SoberEyePage() {
   const data = {
     soberSectionsArr: [
       {
@@ -72,6 +76,10 @@ export default function SoberEyePage() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" name="description" content="Инновационное решение для обеспечения безопасности на рабочем месте, которое спасает жизни и экономит ваши деньги с точностью 99,99%" />
+        <title>Sobereye</title>
+      </Helmet>
       { data.soberSectionsArr.map((item) => (
         <div className="sober-eye-section" style={ {
           backgroundColor: item.color,

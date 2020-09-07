@@ -32,10 +32,10 @@ export default class Footer extends Component {
       <footer className="footer has-background-black-bis">
         <div className="content">
           <div className="columns">
-            <div className="column is-4">
+            {/* <div className="column is-4">
               <h3 className="has-text-light has-text-left">Последние новости</h3>
               <List data={ this.state.items[0].news } />
-            </div>
+            </div> */}
             <div className="column is-4">
               <h3 className="has-text-light has-text-left">Оставьте контакты</h3>
               <Form/>

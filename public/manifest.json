@@ -1,23 +1,6 @@
 {
-  "short_name": "uvision",
-  "name": "uvision for life",
-  "icons": [
-    {
-      "src": "bekalogo.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "bekalogo.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "bekalogo.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }	    
-  ],
+  "short_name": "uVision Safety Solutions",
+  "name": "uVision Safety Solutions",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
