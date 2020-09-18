@@ -738,9 +738,9 @@ iframe, object, embed {
 
 @media screen and (max-width: 375px) {
   .featured-flowers {
-    padding: 50px;
+    padding: 51px;
   }
-  
+
 }
 
 @media screen and (max-width: 1024px) {
