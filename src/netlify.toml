@@ -4,3 +4,4 @@ to = "/index.html"
 from = "/services"
 to = "/services.html"
 status = 200
+command = "CI= npm run build"
