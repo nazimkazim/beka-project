@@ -885,4 +885,8 @@ iframe, object, embed {
   .services-col-right {
     padding: 3px;
   }
+
+  .why-us-section {
+    background-image: url('./images/bekaimages/IMG_0852_sm.jpg');
+  }
 }

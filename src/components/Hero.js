@@ -4,21 +4,34 @@ import Fade from 'react-reveal/Fade';
 import { Link } from "react-router-dom";
 import Button from './Button';
 import mainSlider1 from '../images/main-slider-1.jpg';
-import mainSlider2 from '../images/main-slider-2.jpg';
+import mainSlider1Sm from '../images/main-slider-1_sm.jpg';
+import mainSlider2 from '../images/main-slider-2_sm.jpg';
+import mainSlider2sm from '../images/main-slider-2_sm.jpg';
 import soberEyeBack from '../images/sobe-eye-back.webp';
 import soberEyeLogo from '../images/sober-eye-logo.jpg';
 import rigidRoboticsLogo from '../images/rigidlogo-rgb.png';
 import aibackground from '../images/AIbackground.jpg';
+import aibackgroundsm from '../images/AIbackground_sm.jpg';
 import highprecisionbc from '../images/highprecisionbc.jpg';
+import highprecisionbc_sm from '../images/highprecisionbc_sm.jpg';
 import LogoImagingMeglab from '../images/logo-imagine-header.png';
 import meglabbc from '../images/meglabbc.jpg';
+import meglabbcsm from '../images/meglabbc_sm.jpg';
+import styled from 'styled-components';
+
+const CarouselContainer = styled.div`
+    background:url(${props => props.image});
+
+    @media (max-width: 414px) {
+        background:url(${props => props.smImg});
+      }
+`;
 
 
 export default class SimpleSlider extends Component {
     render() {
         const settings = {
             dots: true,
-            infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
@@ -33,6 +46,7 @@ export default class SimpleSlider extends Component {
                 title: 'Высокоточное решение для предотвращения столкновений.',
                 desc: 'Активация «Точности безопасности», потому что ложные тревоги убивают',
                 img: mainSlider1,
+                smImg:mainSlider1Sm,
                 logo: rigidRoboticsLogo
             },
             {
@@ -40,12 +54,14 @@ export default class SimpleSlider extends Component {
                 title: 'Снижение количества несчастных случаев на рабочем месте с инновационным решением по безопасности.',
                 desc: 'Оценить риск нарушения состояния усталости, алкоголь и наркотики на рабочем места, когда это наиболее важно',
                 img: soberEyeBack,
+                smImg:soberEyeBack,
                 logo: soberEyeLogo
             },
             {
                 link: 'Решение для оптимизации подземных горных работ и повышение безопасности персонала',
                 to: 'meglab',
                 img: meglabbc,
+                smImg:meglabbcsm,
                 logo: LogoImagingMeglab
             },
             {
@@ -54,6 +70,7 @@ export default class SimpleSlider extends Component {
                 title: 'Режим «Точной добычи»',
                 desc: 'Сегодняшние горнодобывающие предприятия рассматривают высокоточное позиционирование как эффективную инфраструктуру всего парка',
                 img: highprecisionbc,
+                smImg:highprecisionbc_sm,
                 logo: rigidRoboticsLogo
             },
             {
@@ -62,6 +79,7 @@ export default class SimpleSlider extends Component {
                 title: 'Режим «Точной или выборочной экскавации»',
                 desc: 'Точная или выборочная выемка руды позволяет точно знать, где копает ковш',
                 img: mainSlider2,
+                smImg:mainSlider2sm,
                 logo: rigidRoboticsLogo
             },
             {
@@ -70,6 +88,7 @@ export default class SimpleSlider extends Component {
                 title: 'Новая эра принятия решений на основе Искуственного Интелекта',
                 desc: 'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы',
                 img: aibackground,
+                smImg:aibackgroundsm,
                 logo: rigidRoboticsLogo
             }
 
@@ -79,7 +98,7 @@ export default class SimpleSlider extends Component {
                 <Slider { ...settings }>
                     { data.map((item, index) => (
                         <div key={ index }>
-                            <div className="carrousel_image" style={ { backgroundImage: `url(${item.img})` } }>
+                            <CarouselContainer className="carrousel_image" image={item.img} smImg={item.smImg}>
                                 <div className="columns">
                                     <div className="column hero-left-column">
                                         <div className="hero-left-desc">
@@ -95,7 +114,7 @@ export default class SimpleSlider extends Component {
                                     { item.img && <div className="column hero-right-column">
                                     </div> }
                                 </div>
-                            </div>
+                            </CarouselContainer>
                         </div>
                     )) }
                 </Slider>
