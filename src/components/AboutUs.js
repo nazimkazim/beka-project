@@ -51,7 +51,7 @@ function AboutUs() {
   return (
     <section className="section about-us-section">
       <Helmet>
-        <title>My Title</title>
+        <title>uVision Safety Solutions</title>
         <meta name="о компании" content="компания uvision предлагает широкий спектр в области безопасности горного дела" />
         <link rel="canonical" href="http://uvision.kz" />
     </Helmet>
