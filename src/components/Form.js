@@ -32,9 +32,6 @@ export default function Form() {
           </span>
         </p>
       </div>
-      <div className="field">
-        <div data-netlify-recaptcha="true"></div>
-      </div>
       <input className="button is-success" value="Отправить" type="submit"/>
     </form>
   );
