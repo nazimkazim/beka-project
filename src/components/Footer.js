@@ -4,7 +4,6 @@ import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounde
 import LocationOnRoundedIcon from '@material-ui/icons/LocationOnRounded';
 import PhoneEnabledRoundedIcon from '@material-ui/icons/PhoneEnabledRounded';
 import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
-import Form from './Form'
 
 export default class Footer extends Component {
   state = {
