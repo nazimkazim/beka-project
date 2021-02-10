@@ -35,8 +35,8 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 500,
-            autoplaySpeed: 5000,
+            speed: 999,
+            autoplaySpeed: 5000, 
             cssEase: "ease-in-out"
         };
         const data = [
