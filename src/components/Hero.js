@@ -35,9 +35,9 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 2000,
-            autoplaySpeed: 2000,
-            cssEase: "linear"
+            speed: 500,
+            autoplaySpeed: 5000,
+            cssEase: "ease-in-out"
         };
         const data = [
             {
@@ -46,7 +46,7 @@ export default class SimpleSlider extends Component {
                 title: 'Высокоточное решение для предотвращения столкновений.',
                 desc: 'Активация «Точности безопасности», потому что ложные тревоги убивают',
                 img: mainSlider1,
-                smImg:mainSlider1Sm,
+                smImg: mainSlider1Sm,
                 logo: rigidRoboticsLogo
             },
             {
@@ -54,14 +54,14 @@ export default class SimpleSlider extends Component {
                 title: 'Снижение количества несчастных случаев на рабочем месте с инновационным решением по безопасности.',
                 desc: 'Оценить риск нарушения состояния усталости, алкоголь и наркотики на рабочем места, когда это наиболее важно',
                 img: soberEyeBack,
-                smImg:soberEyeBack,
+                smImg: soberEyeBack,
                 logo: soberEyeLogo
             },
             {
                 link: 'Решение для оптимизации подземных горных работ и повышение безопасности персонала',
                 to: 'meglab',
                 img: meglabbc,
-                smImg:meglabbcsm,
+                smImg: meglabbcsm,
                 logo: LogoImagingMeglab
             },
             {
@@ -70,7 +70,7 @@ export default class SimpleSlider extends Component {
                 title: 'Режим «Точной добычи»',
                 desc: 'Сегодняшние горнодобывающие предприятия рассматривают высокоточное позиционирование как эффективную инфраструктуру всего парка',
                 img: highprecisionbc,
-                smImg:highprecisionbc_sm,
+                smImg: highprecisionbc_sm,
                 logo: rigidRoboticsLogo
             },
             {
@@ -79,7 +79,7 @@ export default class SimpleSlider extends Component {
                 title: 'Режим «Точной или выборочной экскавации»',
                 desc: 'Точная или выборочная выемка руды позволяет точно знать, где копает ковш',
                 img: mainSlider2,
-                smImg:mainSlider2sm,
+                smImg: mainSlider2sm,
                 logo: rigidRoboticsLogo
             },
             {
@@ -88,7 +88,7 @@ export default class SimpleSlider extends Component {
                 title: 'Новая эра принятия решений на основе Искуственного Интелекта',
                 desc: 'Мы можем помочь вам устранить недостатки, оценить и внедрить новые технологии и даже создать полнофункциональные продукты и системы',
                 img: aibackground,
-                smImg:aibackgroundsm,
+                smImg: aibackgroundsm,
                 logo: rigidRoboticsLogo
             }
 
@@ -98,7 +98,7 @@ export default class SimpleSlider extends Component {
                 <Slider { ...settings }>
                     { data.map((item, index) => (
                         <div key={ index }>
-                            <CarouselContainer className="carrousel_image" image={item.img} smImg={item.smImg}>
+                            <CarouselContainer className="carrousel_image" image={ item.img } smImg={ item.smImg }>
                                 <div className="columns">
                                     <div className="column hero-left-column">
                                         <div className="hero-left-desc">
