@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 function ButtonCustom(props) {
   const ButtonCustom = styled.button`
@@ -49,14 +49,14 @@ function ButtonCustom(props) {
     &:hover:after {
       right:80%;
     }
-  ` 
-    
-  
+  `;
+
+
   return (
     <ButtonCustom>
       Скачайте презентацию
     </ButtonCustom>
-  )
+  );
 }
 
-export default ButtonCustom
+export default ButtonCustom;
