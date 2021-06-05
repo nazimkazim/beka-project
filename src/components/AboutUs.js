@@ -2,7 +2,6 @@ import React from 'react';
 import bekaPhoto from '../images/bekaimages/beka-avatar.jpg';
 import victorNevzorov from '../images/victorNevzorov.jpeg';
 import alzhanovNurken from '../images/alzhanovNurken.jpeg';
-import esentai from '../images/esentai.jpeg';
 import baglanUtegen from '../images/bagaUtigen.jpeg';
 import erkinK from '../images/erkin-k.png';
 import nazim from '../images/nazim.png';
