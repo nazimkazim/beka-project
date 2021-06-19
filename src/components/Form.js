@@ -1,10 +1,10 @@
 import React from 'react';
 
 export default function Form() {
-  
+
   return (
     <form name="beka-contacts" method="POST" onSubmit="submit">
-      <input type="hidden" name="beka-contacts" value="beka-contacts"/>
+      <input type="hidden" name="beka-contacts" value="beka-contacts" />
       <div class="field">
         <p class="control has-icons-left">
           <input required class="input" type="text" name="name" placeholder="Имя" />
@@ -32,7 +32,7 @@ export default function Form() {
           </span>
         </p>
       </div>
-      <input className="button is-success" value="Отправить" type="submit"/>
+      <input className="button is-success" value="Отправить" type="submit" />
     </form>
   );
 }

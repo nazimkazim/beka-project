@@ -32,7 +32,7 @@ export default class NavBar extends Component {
               <Navbar.Item dropdown hoverable href="#">
                 <Navbar.Link>
                   Решения
-              </Navbar.Link>
+                </Navbar.Link>
                 <Navbar.Dropdown>
                   <Navbar.Item href="#">
                     <Link to="/prevent-collision">
@@ -60,8 +60,8 @@ export default class NavBar extends Component {
                     </Link>
                   </Navbar.Item>
                   <Navbar.Item href="#">
-                    <Link to="/precision-position">
-                      Высокоточное позиционирование, направление и 3D ориентация - RIGIDROBOTICS
+                    <Link to="/cascadia-scientific">
+                      SmartrView Аналитика Расхода Топлива
                     </Link>
                   </Navbar.Item>
                 </Navbar.Dropdown>

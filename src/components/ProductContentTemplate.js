@@ -21,6 +21,9 @@ const Subheader = styled.h2`
 `;
 
 const DescriptionContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
   min-height:80px;
   padding:20px;
 `;
@@ -39,6 +42,9 @@ const DescriptionContent = styled.div`
 `;
 
 const DescriptionImageContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
   width:${props => props.iconWidth || '75px'};
   height:${props => props.iconHeight || '60px'};
 
@@ -90,14 +96,35 @@ const HR = styled.hr`
   border-top: 2px solid black;
 `;
 
-function ProductContentTemplate({ url, header, subheader, descriptionContent, iconHpposition, features, solution, support, precision, marginTop, iconIsLarger, processing }) {
+const CascadianCaseStudiesHeader = styled.span`
+  margin:0 auto;
+  font-weight:bold;
+  font-size:30px;
+`;
+
+function ProductContentTemplate({
+  url,
+  header,
+  subheader,
+  descriptionContent,
+  iconHpposition,
+  features,
+  solution,
+  support,
+  precision,
+  marginTop,
+  iconIsLarger,
+  processing,
+  smartrViewPic,
+  cascadianCaseStudiesHeader
+}) {
 
   return (
     <section class="section">
       <Helmet>
-        <meta charSet="utf-8" name="description" content={descriptionContent} />
-        <title>{header}</title>
-        <link rel="canonical" href={`http://www.uvision.kz/${url}`} />
+        <meta charSet="utf-8" name="description" content={ descriptionContent } />
+        <title>{ header }</title>
+        <link rel="canonical" href={ `http://www.uvision.kz/${url}` } />
       </Helmet>
       <div class="container">
         <Header class="title">{ header }</Header>
@@ -106,20 +133,21 @@ function ProductContentTemplate({ url, header, subheader, descriptionContent, ic
         </Subheader>
         <DescriptionContainer className="columns">
           <DescriptionIcon className={ `${iconIsLarger ? 'column is-6' : 'column is-1'}` }>
-            { iconIsLarger ? <DescriptionImageContainer iconWidth="360px" iconHeight="280px">
+            { iconIsLarger ? <DescriptionImageContainer iconWidth="100%" iconHeight="100%">
               <img src={ iconHpposition } alt="" />
             </DescriptionImageContainer> : <DescriptionImageContainer>
-                <img src={ iconHpposition } alt="" />
-              </DescriptionImageContainer> }
-
+              <img src={ iconHpposition } alt="" />
+            </DescriptionImageContainer> }
           </DescriptionIcon>
           <DescriptionContent className="column">
+            { smartrViewPic && <img src={ smartrViewPic } /> }
             { descriptionContent }
           </DescriptionContent>
         </DescriptionContainer>
-
+        { cascadianCaseStudiesHeader && <CascadianCaseStudiesHeader>{ cascadianCaseStudiesHeader }</CascadianCaseStudiesHeader> }
         { features.map((item) => (
           <DescriptionContainer className="columns product-description-column">
+
             <DescriptionIcon className="column is-1">
               <DescriptionImageContainer>
                 <img src={ item.icon } alt="" />
