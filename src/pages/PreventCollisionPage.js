@@ -5,7 +5,7 @@ import ProductContentTemplate from '../components/ProductContentTemplate';
 import iconPreventCollison from '../images/iconPreventCollison.jpg';
 import iconFeatures from '../images/RR_icon_feature.png';
 import modules from '../images/modules.png';
-import precisionImage from '../images/precison.png'
+import precisionImage from '../images/precision.png'
 import universalSupport from '../images/universalSupport.png';
 
 function PrecisionPositionComp() {
