@@ -140,7 +140,7 @@ function ProductContentTemplate({
             </DescriptionImageContainer> }
           </DescriptionIcon>
           <DescriptionContent className="column">
-            { smartrViewPic && <img src={ smartrViewPic } /> }
+            { smartrViewPic && <img src={ smartrViewPic } alt="" /> }
             { descriptionContent }
           </DescriptionContent>
         </DescriptionContainer>
