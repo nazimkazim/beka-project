@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroComp from '../components/HeroComp';
-import mainSlider2 from '../images/main-slider-2.jpg';
+import KTP1 from '../images/ktp1.jpg';
 import ProductContentTemplate from '../components/ProductContentTemplate';
 import bucketpositioning300x300 from '../images/bucketpositioning300x300.png';
 import iconFeatures from '../images/RR_icon_feature.png';
@@ -9,10 +9,10 @@ import universalSupport from '../images/universalSupport.png';
 
 function PrecisionPositionComp() {
   const content = {
-    header: 'Высокоточное позиционирование ковша и геометрия рукояти',
-    url:'precision-selective-digging',
-    backgroundImage: mainSlider2,
-    subheader: 'Режим «Точной или выборочной экскавации»',
+    header: 'Изготовление электрооборудования',
+    url: 'electrics',
+    backgroundImage: KTP1,
+    subheader: ``,
     descriptionContainer: {
       icon: bucketpositioning300x300,
       descriptionContent: `Точная или выборочная экскавация позволяет точно знать, где копает ковш. Таким образом, рудник может планировать выборочную выемку руды с разным содержанием руды на разной высоте уступа. Более того, положение ковша может использоваться любой сторонней системой для маркировки руды с точным местоположением, которое будет коррелировано с данными взрыва или планирования. Геометрия рукояти позволяет анализировать перемещение грузовой единицы. Приложения включают предотвращение превышения ограничений, предотвращение агрессивного движения, защиту гусениц и автоматизацию`
@@ -20,18 +20,38 @@ function PrecisionPositionComp() {
     features: [
       {
         icon: iconFeatures,
-        header: 'Спроектирован для работы в горном деле',
-        description: 'Специальные аппаратные и программные интерфейсы для горного дела'
+        header: 'КТП, КТПН, КТПГ, 2КТПГ 25-2500 КВ',
+        description: ''
       },
       {
         icon: iconFeatures,
-        header: 'Открытый-API',
-        description: 'Легко интегрируется. Разработан таким образом, чтобы вывод могли использовать несколько сторонних систем. Открытые данные по стандартам GMG'
+        header: 'БМЗ, 2КТПБ',
+        description: ''
       },
       {
         icon: iconFeatures,
-        header: 'Низкозатратный',
-        description: 'Значительно более низкая стоимость покупки и эксплуатации, чем у конкурирующих продуктов'
+        header: 'КСО 2-10, КСО 292, КСО 366',
+        description: ''
+      },
+      {
+        icon: iconFeatures,
+        header: 'К-59, КРН, К-7, КМ-7М',
+        description: ''
+      },
+      {
+        icon: iconFeatures,
+        header: 'ЩО-70, ШРС, ВРУ',
+        description: ''
+      },
+      {
+        icon: iconFeatures,
+        header: 'КТПС',
+        description: ''
+      },
+      {
+        icon: iconFeatures,
+        header: 'ШУОТ, ШСН',
+        description: ''
       }
     ],
     solution: [
@@ -47,13 +67,22 @@ function PrecisionPositionComp() {
       image: universalSupport,
       description: 'Сократите расходы на инвентарь и техническое обслуживание, используя идентичные детали и кабели для всего вашего парка.'
     }
-}
-return (
-  <div>
-    <HeroComp background={ content.backgroundImage } title={ content.header } />
-    <ProductContentTemplate url={content.url} header={ content.header } subheader={ content.subheader } descriptionContent={ content.descriptionContainer.descriptionContent } iconHpposition={ content.descriptionContainer.icon } features={ content.features } solution={ content.solution } support={ content.support } precision={content.precision} marginTop="20px" />
-  </div>
-);
+  };
+  return (
+    <div>
+      <HeroComp background={ content.backgroundImage } title={ content.header } />
+      <ProductContentTemplate
+        url={ content.url }
+        header={ content.header }
+        subheader={ content.subheader }
+        descriptionContent={ content.descriptionContainer.descriptionContent }
+        shouldBeDescription={ false }
+        iconHpposition={ content.descriptionContainer.icon }
+        features={ content.features }
+        marginTop="20px"
+      />
+    </div>
+  );
 }
 
 export default PrecisionPositionComp;

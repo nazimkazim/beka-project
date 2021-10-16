@@ -55,15 +55,15 @@ export default class NavBar extends Component {
                     </Link>
                   </Navbar.Item>
                   <Navbar.Item href="#">
-                    <Link to="/precision-selective-digging">
-                      Высокоточное позиционирование ковша и геометрия рукояти - RIGIDROBOTICS
+                    <Link to="/electrics">
+                      Изготовление электрооборудования
                     </Link>
                   </Navbar.Item>
-                  <Navbar.Item href="#">
+                  {/* <Navbar.Item href="#">
                     <Link to="/cascadia-scientific">
                       SmartrView Аналитика Расхода Топлива
                     </Link>
-                  </Navbar.Item>
+                  </Navbar.Item> */}
                 </Navbar.Dropdown>
               </Navbar.Item>
               <Navbar.Item>

@@ -296,7 +296,7 @@ a {
 
 .why-us-container .why-us-card .face.face1 {
   position: relative;
-  background:#2e3836;
+  background: #2e3836;
   display: flex;
   padding: 20px;
   justify-content: center;
@@ -328,7 +328,7 @@ a {
 }
 
 .why-us-container .why-us-card .face.face2 .content p {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .why-us-container .why-us-card .face.face2 {
@@ -348,7 +348,7 @@ a {
 }
 
 .why-us-container .why-us-card:hover .face.face2 .content p {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .sober-eye-section {
@@ -572,7 +572,6 @@ a {
   min-width: 100vw;
   min-height: 150px;
   /* background-color: #041f22; */
-
 }
 
 .meglab-advantages-items-container-item {
@@ -624,7 +623,9 @@ a {
   align-items: center;
 }
 
-iframe, object, embed {
+iframe,
+object,
+embed {
   max-width: 100%;
   max-height: 100%;
 }
@@ -653,7 +654,7 @@ iframe, object, embed {
   align-items: center;
   min-height: calc(100vh - 52px);
   width: 100wh;
-  background-color: #051C28;
+  background-color: #051c28;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -719,8 +720,6 @@ iframe, object, embed {
   margin-bottom: 3px;
 }
 
-
-
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
   .hero {
@@ -737,12 +736,10 @@ iframe, object, embed {
   }
 }
 
-
 @media screen and (max-width: 375px) {
   .featured-flowers {
     padding: 51px;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -850,7 +847,9 @@ iframe, object, embed {
     display: grid;
   }
 
-  iframe, object, embed {
+  iframe,
+  object,
+  embed {
     max-width: 100%;
     max-height: 100%;
   }
@@ -869,11 +868,11 @@ iframe, object, embed {
   }
 
   .hero-left-desc-h1-link {
-    line-height: .7;
+    line-height: 0.7;
   }
 
   .hero-left-desc-title {
-  font-size: 16px;
+    font-size: 16px;
   }
 
   .hero-left-desc-desc {

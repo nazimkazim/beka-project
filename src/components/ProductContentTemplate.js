@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
 
@@ -116,7 +116,8 @@ function ProductContentTemplate({
   iconIsLarger,
   processing,
   smartrViewPic,
-  cascadianCaseStudiesHeader
+  cascadianCaseStudiesHeader,
+  shouldBeDescription
 }) {
 
   return (
@@ -131,19 +132,21 @@ function ProductContentTemplate({
         <Subheader class="subtitle" marginTop="80px">
           { subheader }
         </Subheader>
-        <DescriptionContainer className="columns">
-          <DescriptionIcon className={ `${iconIsLarger ? 'column is-6' : 'column is-1'}` }>
-            { iconIsLarger ? <DescriptionImageContainer iconWidth="100%" iconHeight="100%">
-              <img src={ iconHpposition } alt="" />
-            </DescriptionImageContainer> : <DescriptionImageContainer>
-              <img src={ iconHpposition } alt="" />
-            </DescriptionImageContainer> }
-          </DescriptionIcon>
-          <DescriptionContent className="column">
-            { smartrViewPic && <img src={ smartrViewPic } alt="" /> }
-            { descriptionContent }
-          </DescriptionContent>
-        </DescriptionContainer>
+        { shouldBeDescription && (
+          <DescriptionContainer className="columns">
+            <DescriptionIcon className={ `${iconIsLarger ? 'column is-6' : 'column is-1'}` }>
+              { iconIsLarger ? <DescriptionImageContainer iconWidth="100%" iconHeight="100%">
+                <img src={ iconHpposition } alt="" />
+              </DescriptionImageContainer> : <DescriptionImageContainer>
+                <img src={ iconHpposition } alt="" />
+              </DescriptionImageContainer> }
+            </DescriptionIcon>
+            <DescriptionContent className="column">
+              { smartrViewPic && <img src={ smartrViewPic } alt="" /> }
+              { descriptionContent }
+            </DescriptionContent>
+          </DescriptionContainer>
+        ) }
         { cascadianCaseStudiesHeader && <CascadianCaseStudiesHeader>{ cascadianCaseStudiesHeader }</CascadianCaseStudiesHeader> }
         { features.map((item) => (
           <DescriptionContainer className="columns product-description-column">
@@ -209,9 +212,14 @@ function ProductContentTemplate({
             <HR />
           </>
         ) }
-        <Header class="title" marginTop="50px">{ support.header }</Header>
-        <img src={ support.image } alt="" />
-        <SupportDescription marginTop="50px">{ support.description }</SupportDescription>
+        { support && (
+          <Fragment>
+            <Header class="title" marginTop="50px">{ support.header }</Header>
+            <img src={ support.image } alt="" />
+            <SupportDescription marginTop="50px">{ support.description }</SupportDescription>
+          </Fragment>
+        ) }
+
       </div>
     </section>
   );

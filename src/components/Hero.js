@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import Button from './Button';
 import mainSlider1 from '../images/main-slider-1.jpg';
 import mainSlider1Sm from '../images/main-slider-1_sm.jpg';
-import mainSlider2 from '../images/main-slider-2_sm.jpg';
-import mainSlider2sm from '../images/main-slider-2_sm.jpg';
+import mainSlider2 from '../images/ktp1.jpg';
 import soberEyeBack from '../images/sobe-eye-back.webp';
 import soberEyeLogo from '../images/sober-eye-logo.jpg';
 import rigidRoboticsLogo from '../images/rigidlogo-rgb.png';
@@ -74,13 +73,12 @@ export default class SimpleSlider extends Component {
                 logo: rigidRoboticsLogo
             },
             {
-                link: 'Высокоточное позиционирование ковша и геометрия рукояти',
-                to: 'precision-selective-digging',
-                title: 'Режим «Точной или выборочной экскавации»',
-                desc: 'Точная или выборочная выемка руды позволяет точно знать, где копает ковш',
+                link: 'Изготовление электрооборудования',
+                to: 'electrics',
+                title: '',
+                desc: '',
                 img: mainSlider2,
-                smImg: mainSlider2sm,
-                logo: rigidRoboticsLogo
+                smImg: ''
             },
             {
                 link: 'Продвинутая аналитика и использование Искуственного Интелекта в горном деле',

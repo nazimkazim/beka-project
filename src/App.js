@@ -4,7 +4,7 @@ import Home from "../src/pages/Home";
 import Error from "../src/pages/Error";
 import PrecisionPositionPage from "./pages/PrecisionPositionPage";
 import PreventCollisionPage from "./pages/PreventCollisionPage";
-import HPShovel from './pages/HPShovel';
+import Electrics from './pages/Electrics';
 import NavBar from "../src/components/NavBar";
 import Footer from "../src/components/Footer";
 import { Route, Switch } from "react-router-dom";
@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/" component={ Home } />
         <Route exact path="/precision-position" component={ PrecisionPositionPage } />
         <Route exact path="/prevent-collision" component={ PreventCollisionPage } />
-        <Route exact path="/precision-selective-digging" component={ HPShovel } />
+        <Route exact path="/electrics" component={ Electrics } />
         <Route exact path="/meglab" component={ MeglabPage } />
         <Route exact path="/sober-eye" component={ SoberEyePage } />
         <Route exact path="/aianalytics" component={ AIanalytics } />

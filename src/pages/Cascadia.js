@@ -4,13 +4,14 @@ import mainSlider1 from '../images/haul-track.jpeg';
 import ProductContentTemplate from '../components/ProductContentTemplate';
 import CascadianLogo from '../images/cascadian-logo.png';
 import SmartRViewPicture from '../images/SmartRViewPicture.png';
-import modules from '../images/modules.png';
+/* import modules from '../images/modules.png';
 import precisionImage from '../images/precision.png';
-import universalSupport from '../images/universalSupport.png';
+import universalSupport from '../images/universalSupport.png'; */
 import MLIcon from '../images/MLIcon.png';
 import OperatorIcon from '../images/OperatorIcon.png';
 import DumpTruck from '../images/DumpTruck.png';
 import PM from '../images/PM.png';
+/* import PDFViewer from '../components/PDFViewer'; */
 
 const Cascadia = () => {
   const content = {
@@ -42,7 +43,7 @@ const Cascadia = () => {
         icon: MLIcon,
         header: 'Прогнозирование карьера с помощью Машинного Обучения'
       }
-    ],
+    ]/* ,
     solution: [
       {
         header: 'Модульное решение',
@@ -60,7 +61,7 @@ const Cascadia = () => {
       header: 'Универсальная  поддержка машин',
       image: universalSupport,
       description: 'Сократите расходы на инвентарь и техническое обслуживание, используя идентичные детали и кабели для всего вашего парка.'
-    }
+    } */
   };
   return (
     <div>
@@ -78,6 +79,7 @@ const Cascadia = () => {
         cascadianCaseStudiesHeader={ content.cascadianCaseStudiesHeader }
         iconIsLarger="true" marginTop="20px"
       />
+      {/* <PDFViewer/> */ }
     </div>
   );
 };
